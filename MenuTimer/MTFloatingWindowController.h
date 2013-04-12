@@ -9,8 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MTFloatingWindowController : NSWindowController
+
 @property (weak) IBOutlet NSTextField *infoLabel;
 
-
 -(void)upadteWithPosition:(NSPoint)position seconds:(double)seconds;
+
 @end

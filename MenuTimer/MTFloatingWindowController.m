@@ -14,22 +14,13 @@
 
 @implementation MTFloatingWindowController
 
-- (id)initWithWindow:(NSWindow *)window
-{
-    self = [super initWithWindow:window];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
-}
-
 - (void)windowDidLoad
 {
     [super windowDidLoad];
     self.window.styleMask = NSBorderlessWindowMask;
     self.window.level = NSScreenSaverWindowLevel;
     [self.window makeKeyAndOrderFront:self];
+    self.window.alphaValue = .5;
 }
 
 -(void)upadteWithPosition:(NSPoint)position seconds:(double)seconds {
@@ -45,8 +36,6 @@
     int minutes = (roundedSeconds - (60*60*hours)) / 60;
     NSString *formatString = [NSString stringWithFormat:@"%dh %dm", hours, minutes];
     self.infoLabel.stringValue = formatString;
-//    NSLog(@"seconds: %d / %@ / %@", roundedSeconds, [date description], [self.infoLabel.formatter stringFromDate:date]);
-
 }
 
 @end

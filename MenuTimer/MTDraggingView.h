@@ -19,13 +19,15 @@
 
 
 @interface MTDraggingView : NSView
-@property (nonatomic, strong) id mouseUpMonitor;
-@property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, strong) id moveMonitor;
-@property (nonatomic, strong) MTFloatingWindowController *floatingWindowController;
-@property double seconds;
 
 @property (nonatomic, weak) id<MTDraggingViewDelegate> delegate;
+
+@property (nonatomic, strong) MTFloatingWindowController *floatingWindowController;
+
+@property (nonatomic, strong) id mouseUpMonitor;
+
+@property (nonatomic, strong) NSTimer *animationTimer;
+@property double seconds;
 
 @property NSPoint startPoint;
 

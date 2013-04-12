@@ -12,6 +12,8 @@
 
 @implementation MTDraggingView
 
+#pragma mark - View Lifecycle Stuff
+
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
@@ -25,75 +27,12 @@
     [self setNeedsDisplay:YES];
 }
 
--(void)mouseDown:(NSEvent *)theEvent {
-//    NSLog(@"register mouse monitors");
-
-    self.startPoint = [self mousePosition];
-
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.02
-                                                  target:self
-                                                selector:@selector(draggingTimerEvent:)
-                                                userInfo:nil
-                                                 repeats:YES];
-
-
-
-    self.mouseUpMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDragged handler:^(NSEvent *event) {
-
-//        NSLog(@"mouse up");
-        self.floatingWindowController = nil;
-
-        [self.timer invalidate];
-        self.timer = nil;
-
-        [NSEvent removeMonitor:self.mouseUpMonitor];
-        
-        /**
-         *  Alert delegate
-         */
-        [self.delegate draggingView:self didReceiveSeconds:self.seconds];
-        
-        return event;
-    }];
-
-    self.floatingWindowController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
-}
-
-
-/**
- *  Called every .2 seconds while dragging
- */
--(void)draggingTimerEvent:(NSTimer *)timer {
-    /**
-     *  Update floating Window
-     */
-    NSPoint p = [self mousePosition];
-    self.seconds = [self secondsForPosition:p];
-    [self.floatingWindowController upadteWithPosition:p seconds:self.seconds];
-    [self setNeedsDisplay:YES];
-}
-
--(NSPoint)mousePosition {
-    CGEventRef ourEvent = CGEventCreate(NULL);
-    NSPoint point = CGEventGetLocation(ourEvent);
-    [self secondsForPosition:point];
-    point.y = [NSScreen mainScreen].frame.size.height - point.y;
-    return point;
-}
-
--(double)secondsForPosition:(NSPoint)position {
-    double dx   = position.x - self.startPoint.x;   //horizontal difference
-    double dy   = position.y - self.startPoint.y;   //vertical difference
-    double dist = sqrt( dx*dx + dy*dy );            //distance using Pythagoras theorem
-    double seconds = (int)(dist*dist/5000)*60;
-    return fmin(seconds, 60*60*9);
-}
 
 -(void)drawRect:(NSRect)dirtyRect {
-
+    
     [[NSColor blackColor] setStroke];
     [[NSColor colorWithDeviceWhite:0 alpha:.3]  setFill];
-
+    
     /**
      *  Circle Drawing Magic
      */
@@ -101,7 +40,7 @@
     NSBezierPath* circlePath = [NSBezierPath bezierPath];
     [circlePath appendBezierPathWithOvalInRect: rect];
     [circlePath fill];
-
+    
     /**
      *  Angle Drawing Magic
      */
@@ -124,24 +63,91 @@
         NSBezierPath* circlePath = [NSBezierPath bezierPath];
         [circlePath appendBezierPathWithOvalInRect: rect];
         [circlePath fill];
-
-
+        
+        
         NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
         [style setAlignment:NSCenterTextAlignment];
-//        NSDictionary *attr = [NSDictionary dictionaryWithObject:style forKey:NSParagraphStyleAttributeName];
-
+        //        NSDictionary *attr = [NSDictionary dictionaryWithObject:style forKey:NSParagraphStyleAttributeName];
+        
         NSString *hoursString = [NSString stringWithFormat:@"%d", hours];
-//        [hoursString drawAtPoint:NSMakePoint(8, 4) withAttributes:attr];
+        //        [hoursString drawAtPoint:NSMakePoint(8, 4) withAttributes:attr];
         
         [hoursString drawAtPoint:NSMakePoint(8.5,5) withAttributes:[NSDictionary
-                                               dictionaryWithObjectsAndKeys:
-                                               [NSColor whiteColor], NSForegroundColorAttributeName,
-                                               [NSFont fontWithName:@"Helvetica-Bold" size:9], NSFontAttributeName,
-                                               nil]];
-
+                                                                    dictionaryWithObjectsAndKeys:
+                                                                    [NSColor whiteColor], NSForegroundColorAttributeName,
+                                                                    [NSFont fontWithName:@"Helvetica-Bold" size:9], NSFontAttributeName,
+                                                                    nil]];
+        
     }
-
+    
 }
+
+#pragma mark - Mouse Events
+
+-(void)mouseDown:(NSEvent *)theEvent {
+
+    self.startPoint = [self mousePosition];
+
+    self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:0.02
+                                                  target:self
+                                                selector:@selector(draggingTimerEvent:)
+                                                userInfo:nil
+                                                 repeats:YES];
+
+
+
+    self.mouseUpMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDragged handler:^(NSEvent *event) {
+
+        self.floatingWindowController = nil;
+
+        [self.animationTimer invalidate];
+        self.animationTimer = nil;
+
+        [NSEvent removeMonitor:self.mouseUpMonitor];
+        
+        /**
+         *  Alert delegate
+         */
+        [self.delegate draggingView:self didReceiveSeconds:self.seconds];
+        
+        return event;
+    }];
+
+    self.floatingWindowController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
+}
+
+/**
+ *  Called every .2 seconds while dragging
+ */
+-(void)draggingTimerEvent:(NSTimer *)timer {
+    /**
+     *  Update floating Window
+     */
+    NSPoint p = [self mousePosition];
+    self.seconds = [self secondsForPosition:p];
+    [self.floatingWindowController upadteWithPosition:p seconds:self.seconds];
+    [self setNeedsDisplay:YES];
+}
+
+#pragma mark - Calculations
+
+-(NSPoint)mousePosition {
+    CGEventRef ourEvent = CGEventCreate(NULL);
+    NSPoint point = CGEventGetLocation(ourEvent);
+    [self secondsForPosition:point];
+    point.y = [NSScreen mainScreen].frame.size.height - point.y;
+    return point;
+}
+
+-(double)secondsForPosition:(NSPoint)position {
+    double dx   = position.x - self.startPoint.x;   //horizontal difference
+    double dy   = position.y - self.startPoint.y;   //vertical difference
+    double dist = sqrt( dx*dx + dy*dy );            //distance using Pythagoras theorem
+    double seconds = (int)(dist*dist/5000)*60;
+    return fmin(seconds, 60*60*9);
+}
+
+#pragma mark - Public Methods
 
 -(void)updateWithSeconds:(double)seconds {
     self.seconds = seconds;
