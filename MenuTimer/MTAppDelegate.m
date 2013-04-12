@@ -7,7 +7,6 @@
 //
 
 #import "MTAppDelegate.h"
-#import "MTDraggingView.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation MTAppDelegate
@@ -20,9 +19,9 @@
 {
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setTitle:@"test"];
-    MTDraggingView *dview = [[MTDraggingView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
-    dview.delegate = self;
-    self.statusItem.view = dview;
+    self.draggingView = [[MTDraggingView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
+    self.draggingView.delegate = self;
+    self.statusItem.view = self.draggingView;
 }
 
 
@@ -30,26 +29,33 @@
 
 //    Speed mode
 //    seconds = seconds/60;
-
-    NSLog(@"seconds: %d", seconds);
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:(double)seconds
+    self.countdown = seconds;
+    
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:60
                                                   target:self
                                                 selector:@selector(timerDidEnd:)
                                                 userInfo:nil
-                                                 repeats:NO];
-    
-    
-
+                                                 repeats:YES];
 }
 
 -(void)timerDidEnd:(NSTimer*)timer {
-    NSLog(@"fire");
-    NSUserNotification *notification = [[NSUserNotification alloc] init];
-    notification.title = @"Hello, World!";
-    notification.informativeText = @"A notification";
-    notification.soundName = NSUserNotificationDefaultSoundName;
+    self.countdown -= 60;
+
+    NSLog(@"countdown: %f seconds left", self.countdown);
+    if (self.countdown <= 0) {
+        [self.countdownTimer invalidate];
+        self.countdownTimer = nil;
+        
+        NSUserNotification *notification = [[NSUserNotification alloc] init];
+        notification.title = @"Menu Timer Done!";
+        notification.informativeText = @"Tick Tack!";
+        notification.soundName = NSUserNotificationDefaultSoundName;
+        
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+    }
     
-    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+    [self.draggingView updateWithSeconds:self.countdown];
+    
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "de.markusteufel.MenuTimer" in the user's Application Support directory.

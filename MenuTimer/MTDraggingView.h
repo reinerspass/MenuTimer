@@ -25,10 +25,11 @@
 @property (nonatomic, strong) MTFloatingWindowController *floatingWindowController;
 @property double seconds;
 
-@property float clockAngle;
-
 @property (nonatomic, weak) id<MTDraggingViewDelegate> delegate;
 
 @property NSPoint startPoint;
+
+-(void)updateWithSeconds:(double)seconds;
+
 
 @end

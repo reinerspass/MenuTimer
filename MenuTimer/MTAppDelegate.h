@@ -18,10 +18,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic, strong) NSStatusItem *statusItem;
-@property (nonatomic, strong) id mouseUpMonitor;
-@property (nonatomic, strong) id moveMonitor;
+@property (nonatomic, strong) MTDraggingView *draggingView;
 
-@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) NSTimer *countdownTimer;
+@property double countdown;
 
 - (IBAction)saveAction:(id)sender;
 

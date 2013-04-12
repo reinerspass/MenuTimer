@@ -41,11 +41,6 @@
     
     int roundedSeconds = seconds / 60 * 60;
     
-//    NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:(NSTimeInterval)roundedSeconds];
-//    NSDateFormatter *timeFormat = self.infoLabel.formatter;
-//    timeFormat.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
-//    self.infoLabel.stringValue = [self.infoLabel.formatter stringFromDate:date];
-    
     int hours = roundedSeconds / 60 / 60;
     int minutes = (roundedSeconds - (60*60*hours)) / 60;
     NSString *formatString = [NSString stringWithFormat:@"%dh %dm", hours, minutes];
