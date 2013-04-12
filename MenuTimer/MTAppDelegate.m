@@ -7,6 +7,8 @@
 //
 
 #import "MTAppDelegate.h"
+#import "MTDraggingView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MTAppDelegate
 
@@ -16,7 +18,38 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [self.statusItem setTitle:@"test"];
+    MTDraggingView *dview = [[MTDraggingView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
+    dview.delegate = self;
+    self.statusItem.view = dview;
+}
+
+
+-(void)draggingView:(MTDraggingView *)draggingView didReceiveSeconds:(int)seconds {
+
+//    Speed mode
+//    seconds = seconds/60;
+
+    NSLog(@"seconds: %d", seconds);
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:(double)seconds
+                                                  target:self
+                                                selector:@selector(timerDidEnd:)
+                                                userInfo:nil
+                                                 repeats:NO];
+    
+    
+
+}
+
+-(void)timerDidEnd:(NSTimer*)timer {
+    NSLog(@"fire");
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = @"Hello, World!";
+    notification.informativeText = @"A notification";
+    notification.soundName = NSUserNotificationDefaultSoundName;
+    
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "de.markusteufel.MenuTimer" in the user's Application Support directory.

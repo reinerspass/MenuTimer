@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED8984DB17180284005CBF3C /* MenubarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8984DA17180284005CBF3C /* MenubarIcon.png */; };
 		ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED908FEF1715537F003804C5 /* Cocoa.framework */; };
 		ED908FFA1715537F003804C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED908FF81715537F003804C5 /* InfoPlist.strings */; };
 		ED908FFC1715537F003804C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908FFB1715537F003804C5 /* main.m */; };
@@ -14,9 +15,14 @@
 		ED9090031715537F003804C5 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9090021715537F003804C5 /* MTAppDelegate.m */; };
 		ED9090061715537F003804C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9090041715537F003804C5 /* MainMenu.xib */; };
 		ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */; };
+		ED90901217155576003804C5 /* MTDraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED90901117155576003804C5 /* MTDraggingView.m */; };
+		ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED909013171556F2003804C5 /* QuartzCore.framework */; };
+		EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */; };
+		EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED8984DA17180284005CBF3C /* MenubarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenubarIcon.png; path = images/MenubarIcon.png; sourceTree = "<group>"; };
 		ED908FEC1715537F003804C5 /* MenuTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908FEF1715537F003804C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ED908FF21715537F003804C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -31,6 +37,12 @@
 		ED9090021715537F003804C5 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
 		ED9090051715537F003804C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		ED9090081715537F003804C5 /* MenuTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MenuTimer.xcdatamodel; sourceTree = "<group>"; };
+		ED90901017155576003804C5 /* MTDraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggingView.h; sourceTree = "<group>"; };
+		ED90901117155576003804C5 /* MTDraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggingView.m; sourceTree = "<group>"; };
+		ED909013171556F2003804C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFloatingWindowController.h; sourceTree = "<group>"; };
+		EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFloatingWindowController.m; sourceTree = "<group>"; };
+		EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTFloatingWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */,
 				ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +61,7 @@
 		ED908FE31715537F003804C5 = {
 			isa = PBXGroup;
 			children = (
+				ED909013171556F2003804C5 /* QuartzCore.framework */,
 				ED908FF51715537F003804C5 /* MenuTimer */,
 				ED908FEE1715537F003804C5 /* Frameworks */,
 				ED908FED1715537F003804C5 /* Products */,
@@ -84,11 +98,17 @@
 		ED908FF51715537F003804C5 /* MenuTimer */ = {
 			isa = PBXGroup;
 			children = (
+				ED90900F17155562003804C5 /* Ressources */,
 				ED9090011715537F003804C5 /* MTAppDelegate.h */,
 				ED9090021715537F003804C5 /* MTAppDelegate.m */,
 				ED9090041715537F003804C5 /* MainMenu.xib */,
 				ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */,
 				ED908FF61715537F003804C5 /* Supporting Files */,
+				ED90901017155576003804C5 /* MTDraggingView.h */,
+				ED90901117155576003804C5 /* MTDraggingView.m */,
+				EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */,
+				EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */,
+				EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */,
 			);
 			path = MenuTimer;
 			sourceTree = "<group>";
@@ -103,6 +123,14 @@
 				ED908FFE1715537F003804C5 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED90900F17155562003804C5 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				ED8984DA17180284005CBF3C /* MenubarIcon.png */,
+			);
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +188,8 @@
 				ED908FFA1715537F003804C5 /* InfoPlist.strings in Resources */,
 				ED9090001715537F003804C5 /* Credits.rtf in Resources */,
 				ED9090061715537F003804C5 /* MainMenu.xib in Resources */,
+				EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */,
+				ED8984DB17180284005CBF3C /* MenubarIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +203,8 @@
 				ED908FFC1715537F003804C5 /* main.m in Sources */,
 				ED9090031715537F003804C5 /* MTAppDelegate.m in Sources */,
 				ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */,
+				ED90901217155576003804C5 /* MTDraggingView.m in Sources */,
+				EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +340,7 @@
 				ED90900E1715537F003804C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
