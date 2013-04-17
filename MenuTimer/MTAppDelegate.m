@@ -1,4 +1,4 @@
-//
+ //
 //  MTAppDelegate.m
 //  MenuTimer
 //
@@ -30,8 +30,13 @@
 //    Speed mode
 //    seconds = seconds/60;
     self.countdown = seconds;
-    
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:60
+
+    if (self.countdownTimer != nil) {
+        [self.countdownTimer invalidate];
+        self.countdownTimer = nil;
+    }
+
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:60 // Normal Speed is 60
                                                   target:self
                                                 selector:@selector(timerDidEnd:)
                                                 userInfo:nil

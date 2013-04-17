@@ -29,7 +29,11 @@
 
 
 -(void)drawRect:(NSRect)dirtyRect {
-    
+    CGSize shadowSize = CGSizeMake(0, -1);
+    CGContextSetShadowWithColor([[NSGraphicsContext currentContext] graphicsPort], shadowSize, 0,
+                                [NSColor whiteColor].CGColor);
+
+
     [[NSColor blackColor] setStroke];
     [[NSColor colorWithDeviceWhite:0 alpha:.3]  setFill];
     
@@ -63,7 +67,12 @@
         NSBezierPath* circlePath = [NSBezierPath bezierPath];
         [circlePath appendBezierPathWithOvalInRect: rect];
         [circlePath fill];
+
         
+        CGSize shadowSize = CGSizeMake(0, 0);
+        CGContextSetShadowWithColor([[NSGraphicsContext currentContext] graphicsPort], shadowSize, 0,
+                                    [NSColor clearColor].CGColor);
+
         
         NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
         [style setAlignment:NSCenterTextAlignment];

@@ -17,6 +17,8 @@
 		ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */; };
 		ED90901217155576003804C5 /* MTDraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED90901117155576003804C5 /* MTDraggingView.m */; };
 		ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED909013171556F2003804C5 /* QuartzCore.framework */; };
+		EDB7C658171E98E40011C6DC /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDB7C657171E98E40011C6DC /* TimerIcon.icns */; };
+		EDB7C65A171E98ED0011C6DC /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDB7C659171E98ED0011C6DC /* TimerIcon.icns */; };
 		EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */; };
 		EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		ED90901017155576003804C5 /* MTDraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggingView.h; sourceTree = "<group>"; };
 		ED90901117155576003804C5 /* MTDraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggingView.m; sourceTree = "<group>"; };
 		ED909013171556F2003804C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EDB7C657171E98E40011C6DC /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TimerIcon.icns; path = images/TimerIcon.icns; sourceTree = "<group>"; };
+		EDB7C659171E98ED0011C6DC /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TimerIcon.icns; sourceTree = "<group>"; };
 		EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFloatingWindowController.h; sourceTree = "<group>"; };
 		EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFloatingWindowController.m; sourceTree = "<group>"; };
 		EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTFloatingWindowController.xib; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 		ED908FE31715537F003804C5 = {
 			isa = PBXGroup;
 			children = (
+				EDB7C659171E98ED0011C6DC /* TimerIcon.icns */,
 				ED909013171556F2003804C5 /* QuartzCore.framework */,
 				ED908FF51715537F003804C5 /* MenuTimer */,
 				ED908FEE1715537F003804C5 /* Frameworks */,
@@ -128,6 +133,7 @@
 		ED90900F17155562003804C5 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				EDB7C657171E98E40011C6DC /* TimerIcon.icns */,
 				ED8984DA17180284005CBF3C /* MenubarIcon.png */,
 			);
 			name = Ressources;
@@ -190,6 +196,8 @@
 				ED9090061715537F003804C5 /* MainMenu.xib in Resources */,
 				EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */,
 				ED8984DB17180284005CBF3C /* MenubarIcon.png in Resources */,
+				EDB7C658171E98E40011C6DC /* TimerIcon.icns in Resources */,
+				EDB7C65A171E98ED0011C6DC /* TimerIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
