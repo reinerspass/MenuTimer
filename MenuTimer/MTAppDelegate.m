@@ -108,7 +108,7 @@
 }
 
 -(void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
-    NSLog(@"activate!!!! = action?");
+//    NSLog(@"activate!!!! = action?");
     
     switch (notification.activationType) {
         case NSUserNotificationActivationTypeNone:
@@ -163,7 +163,7 @@
     
     NSManagedObjectModel *mom = [self managedObjectModel];
     if (!mom) {
-        NSLog(@"%@:%@ No model to generate a store from", [self class], NSStringFromSelector(_cmd));
+//        NSLog(@"%@:%@ No model to generate a store from", [self class], NSStringFromSelector(_cmd));
         return nil;
     }
     
@@ -241,7 +241,7 @@
     NSError *error = nil;
     
     if (![[self managedObjectContext] commitEditing]) {
-        NSLog(@"%@:%@ unable to commit editing before saving", [self class], NSStringFromSelector(_cmd));
+//        NSLog(@"%@:%@ unable to commit editing before saving", [self class], NSStringFromSelector(_cmd));
     }
     
     if (![[self managedObjectContext] save:&error]) {
@@ -300,12 +300,12 @@
 //    https://github.com/reinerspass/FullscreenWriter
     [[NSWorkspace sharedWorkspace] openURL:[ NSURL URLWithString:@"https://github.com/reinerspass/MenuTimer"]];
 
-    NSLog(@"about menu item action");
+//    NSLog(@"about menu item action");
 }
 
 
 - (IBAction)quitMenuTimerMenuAction:(id)sender {
-    NSLog(@"quit menu item action");
+//    NSLog(@"quit menu item action");
     
     exit(0);
 }
