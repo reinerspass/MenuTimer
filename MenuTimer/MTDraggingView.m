@@ -131,6 +131,7 @@
     }];
 
     self.floatingWindowController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
+    self.floatingWindowController.pointerPosition = MTTransparentPointingRectLeft;
 }
 
 -(void)rightMouseDown:(NSEvent *)theEvent {

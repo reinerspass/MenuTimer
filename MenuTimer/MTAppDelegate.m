@@ -10,6 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MTFloatingWindowController.h"
 #import "NSString+MTTime.h"
+#import <DPHue/DPHue.h>
+#import <DPHue/DPHueLight.h>
+#import "MTDefine.h"
 
 @implementation MTAppDelegate
 
@@ -27,22 +30,129 @@
     self.timeLeftMenuItem.title = @"No Timer Set";
     
     
+    self.hue = [[DPHue alloc] initWithHueHost:@"192.168.178.85" username:@"newdeveloper"];
+    [self.hue readWithCompletion:^(DPHue *hue, NSError *err) {
+        if (err != nil) {
+            NSLog(@"error: %@", err.description);
+        } else {
+        }
+    }];
+    
+    
+    [self fileNotifications];
     [self checkFirstLaunch];
+}
+
+
+- (void) receiveSleepNote: (NSNotification*) note
+{
+//    NSLog(@"receiveSleepNote: %@", [note name]);
+ 
+    if (self.countdown > 0) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        NSDate *alertDate = [NSDate dateWithTimeIntervalSinceNow: self.countdown];
+        
+        [defaults setValue:alertDate forKey:DEFAULTS_ALERT_DATE];
+        [defaults synchronize];
+    }
+    
+}
+
+- (void) receiveWakeNote: (NSNotification*) note
+{
+//    NSLog(@"receiveSleepNote: %@", [note name]);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDate *alertDate = [defaults valueForKey:DEFAULTS_ALERT_DATE];
+    
+    if (alertDate != nil) {
+        double timerInterval = [alertDate timeIntervalSinceNow];
+        
+//        NSLog(@"timerInterval %f", timerInterval);
+        
+        self.countdown = timerInterval;
+        
+        if (timerInterval <= 0) {
+            [self timerDidEnd:nil];
+        }
+    }
+}
+
+- (void) fileNotifications
+{
+    //These notifications are filed on NSWorkspace's notification center, not the default
+    // notification center. You will not receive sleep/wake notifications if you file
+    //with the default notification center.
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self
+                                                           selector: @selector(receiveSleepNote:)
+                                                               name: NSWorkspaceWillSleepNotification object: NULL];
+    
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self
+                                                           selector: @selector(receiveWakeNote:)
+                                                               name: NSWorkspaceDidWakeNotification object: NULL];
+}
+
+
+-(void)blinkHue:(int)times {
+    DPHueLight *light = self.hue.lights.lastObject;
+    // Lamp hue, in degrees*182, valid valuse are 0 - 65535.
+    
+    NSNumber *blinkColor = [NSNumber numberWithFloat:360*182];
+    light.transitionTime = @0;
+    
+    int __block counter = times;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, .1 * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+        light.hue = blinkColor;
+        light.saturation = @255;
+        light.brightness = @255;
+        light.on = YES;
+        [light write];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, .1 * NSEC_PER_SEC), dispatch_get_current_queue(), ^{
+            light.on = NO;
+            [light write];
+            if (counter > 0) {
+                [self blinkHue:counter-1];
+            }
+        });
+        
+    });
 }
 
 
 -(void)checkFirstLaunch {
     
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    BOOL notFirstLaunch = [defaults boolForKey:@"notFirstLaunch"];
-//    
-//    if (notFirstLaunch) {
-//        [defaults setBool:YES forKey:@"notFirstLaunch"];
-//        
-//        MTFloatingWindowController *fwc = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
-//        [fwc upadteWithPosition:self.statusItem.view.frame.origin seconds:3];
-//        
-//    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL notFirstLaunch = [defaults boolForKey:DEFAULTS_NOT_FIRST_LAUNCH];
+
+    if (!notFirstLaunch) {
+        [defaults setBool:YES forKey:DEFAULTS_NOT_FIRST_LAUNCH];
+        [defaults synchronize];
+        
+        self.introViewController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
+        
+        NSRect frameRelativeToWindow = [self.draggingView
+                                        convertRect:self.draggingView.bounds toView:nil
+                                        ];
+        
+        NSPoint pointRelativeToScreen = [self.draggingView.window
+                                         convertRectToScreen:frameRelativeToWindow
+                                         ].origin;
+        
+        
+//        NSLog(@"dragging view super rect %@", NSStringFromPoint(pointRelativeToScreen));
+        
+        
+        
+        self.introViewController.pointerPosition = MTTransparentPointingRectTop;
+        [self.introViewController setWindowFrame:NSMakeRect(pointRelativeToScreen.x, pointRelativeToScreen.y, 250, 155)];
+        
+        
+        [self.introViewController addCustomView:self.introView];
+        [self.introViewController windowShowTime:5];
+        
+    }
 }
 
 -(void)draggingView:(MTDraggingView *)draggingView didReceiveSeconds:(int)seconds {
@@ -62,7 +172,7 @@
         self.countdownTimer = nil;
     }
     
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:60 // Normal Speed is 60
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 // Normal Speed is 1
                                                            target:self
                                                          selector:@selector(timerDidEnd:)
                                                          userInfo:nil
@@ -72,7 +182,7 @@
 }
 
 -(void)timerDidEnd:(NSTimer*)timer {
-    self.countdown -= 60;
+    self.countdown -= 1;
 
 //    NSLog(@"countdown: %f seconds left", self.countdown);
     if (self.countdown <= 0) {
@@ -92,6 +202,12 @@
 
         [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
         [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:self.notification];
+        
+        [self blinkHue:3];
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setValue:nil forKey:DEFAULTS_ALERT_DATE];
+        [defaults synchronize];
     }
     
     [self updateTimeLeftMenuItemText];
@@ -300,6 +416,7 @@
 //    https://github.com/reinerspass/FullscreenWriter
     [[NSWorkspace sharedWorkspace] openURL:[ NSURL URLWithString:@"https://github.com/reinerspass/MenuTimer"]];
 
+    
 //    NSLog(@"about menu item action");
 }
 
@@ -308,6 +425,12 @@
 //    NSLog(@"quit menu item action");
     
     exit(0);
+}
+
+- (IBAction)resetSettingsMenuAction:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:nil forKey:DEFAULTS_NOT_FIRST_LAUNCH];
+    [defaults synchronize];
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00616E6050E149A3BF0A2E4F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C3A446E244C7A87984E91 /* libPods.a */; };
 		ED2451D4171F2E2500965323 /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D3171F2E2500965323 /* TimerIcon.icns */; };
 		ED2451D6171F348100965323 /* InstaSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D5171F348100965323 /* InstaSound.aif */; };
 		ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED908FEF1715537F003804C5 /* Cocoa.framework */; };
@@ -18,12 +19,16 @@
 		ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */; };
 		ED90901217155576003804C5 /* MTDraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED90901117155576003804C5 /* MTDraggingView.m */; };
 		ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED909013171556F2003804C5 /* QuartzCore.framework */; };
+		EDA60ED8172D8619005B949C /* MTTransparentPointingRect.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60ED7172D8619005B949C /* MTTransparentPointingRect.m */; };
+		EDA60EDB172D8E33005B949C /* MTFloatingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60EDA172D8E33005B949C /* MTFloatingWindow.m */; };
+		EDA60EE1172DB342005B949C /* NSView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60EE0172DB342005B949C /* NSView+Animation.m */; };
 		EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */; };
 		EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */; };
 		EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		196C3A446E244C7A87984E91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2451D3171F2E2500965323 /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TimerIcon.icns; path = images/TimerIcon.icns; sourceTree = "<group>"; };
 		ED2451D5171F348100965323 /* InstaSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InstaSound.aif; sourceTree = "<group>"; };
 		ED908FEC1715537F003804C5 /* MenuTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +48,19 @@
 		ED90901017155576003804C5 /* MTDraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggingView.h; sourceTree = "<group>"; };
 		ED90901117155576003804C5 /* MTDraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggingView.m; sourceTree = "<group>"; };
 		ED909013171556F2003804C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EDA60ED6172D8619005B949C /* MTTransparentPointingRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTransparentPointingRect.h; sourceTree = "<group>"; };
+		EDA60ED7172D8619005B949C /* MTTransparentPointingRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTransparentPointingRect.m; sourceTree = "<group>"; };
+		EDA60ED9172D8E33005B949C /* MTFloatingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFloatingWindow.h; sourceTree = "<group>"; };
+		EDA60EDA172D8E33005B949C /* MTFloatingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFloatingWindow.m; sourceTree = "<group>"; };
+		EDA60EDC172D9329005B949C /* MTDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDefine.h; sourceTree = "<group>"; };
+		EDA60EDF172DB342005B949C /* NSView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Animation.h"; sourceTree = "<group>"; };
+		EDA60EE0172DB342005B949C /* NSView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Animation.m"; sourceTree = "<group>"; };
 		EDE6D307172D0C4600790EE7 /* NSString+MTTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MTTime.h"; sourceTree = "<group>"; };
 		EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTTime.m"; sourceTree = "<group>"; };
 		EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFloatingWindowController.h; sourceTree = "<group>"; };
 		EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFloatingWindowController.m; sourceTree = "<group>"; };
 		EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTFloatingWindowController.xib; sourceTree = "<group>"; };
+		FCCD1242B1CA4ADE9445E1E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,7 @@
 			files = (
 				ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */,
 				ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */,
+				00616E6050E149A3BF0A2E4F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +83,7 @@
 				ED908FF51715537F003804C5 /* MenuTimer */,
 				ED908FEE1715537F003804C5 /* Frameworks */,
 				ED908FED1715537F003804C5 /* Products */,
+				FCCD1242B1CA4ADE9445E1E8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				ED908FF11715537F003804C5 /* Other Frameworks */,
+				196C3A446E244C7A87984E91 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,11 +127,18 @@
 				ED908FF61715537F003804C5 /* Supporting Files */,
 				ED90901017155576003804C5 /* MTDraggingView.h */,
 				ED90901117155576003804C5 /* MTDraggingView.m */,
+				EDA60ED6172D8619005B949C /* MTTransparentPointingRect.h */,
+				EDA60ED7172D8619005B949C /* MTTransparentPointingRect.m */,
 				EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */,
 				EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */,
 				EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */,
 				EDE6D307172D0C4600790EE7 /* NSString+MTTime.h */,
 				EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */,
+				EDA60ED9172D8E33005B949C /* MTFloatingWindow.h */,
+				EDA60EDA172D8E33005B949C /* MTFloatingWindow.m */,
+				EDA60EDC172D9329005B949C /* MTDefine.h */,
+				EDA60EDF172DB342005B949C /* NSView+Animation.h */,
+				EDA60EE0172DB342005B949C /* NSView+Animation.m */,
 			);
 			path = MenuTimer;
 			sourceTree = "<group>";
@@ -151,6 +174,7 @@
 				ED908FE81715537F003804C5 /* Sources */,
 				ED908FE91715537F003804C5 /* Frameworks */,
 				ED908FEA1715537F003804C5 /* Resources */,
+				247242ADC9554C2CAE2FECE3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +228,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		247242ADC9554C2CAE2FECE3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED908FE81715537F003804C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,6 +256,9 @@
 				ED90901217155576003804C5 /* MTDraggingView.m in Sources */,
 				EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */,
 				EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */,
+				EDA60ED8172D8619005B949C /* MTTransparentPointingRect.m in Sources */,
+				EDA60EDB172D8E33005B949C /* MTFloatingWindow.m in Sources */,
+				EDA60EE1172DB342005B949C /* NSView+Animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +355,7 @@
 		};
 		ED90900D1715537F003804C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCD1242B1CA4ADE9445E1E8 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -324,6 +369,7 @@
 		};
 		ED90900E1715537F003804C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCD1242B1CA4ADE9445E1E8 /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
