@@ -7,6 +7,7 @@
 //
 
 #import "MTFloatingWindowController.h"
+#import "NSString+MTTime.h"
 
 @interface MTFloatingWindowController ()
 
@@ -30,11 +31,8 @@
 
     [self.window setFrameOrigin:position];
     
-    int roundedSeconds = seconds / 60 * 60;
+    NSString *formatString = [NSString timeStringFromSeconds:seconds];
     
-    int hours = roundedSeconds / 60 / 60;
-    int minutes = (roundedSeconds - (60*60*hours)) / 60;
-    NSString *formatString = [NSString stringWithFormat:@"%dh %dm", hours, minutes];
     self.infoLabel.stringValue = formatString;
 }
 

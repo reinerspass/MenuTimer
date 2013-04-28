@@ -8,6 +8,8 @@
 
 #import "MTAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
+#import "MTFloatingWindowController.h"
+#import "NSString+MTTime.h"
 
 @implementation MTAppDelegate
 
@@ -22,46 +24,115 @@
     self.draggingView = [[MTDraggingView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
     self.draggingView.delegate = self;
     self.statusItem.view = self.draggingView;
+    self.timeLeftMenuItem.title = @"No Timer Set";
+    
+    
+    [self checkFirstLaunch];
 }
 
 
+-(void)checkFirstLaunch {
+    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    BOOL notFirstLaunch = [defaults boolForKey:@"notFirstLaunch"];
+//    
+//    if (notFirstLaunch) {
+//        [defaults setBool:YES forKey:@"notFirstLaunch"];
+//        
+//        MTFloatingWindowController *fwc = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
+//        [fwc upadteWithPosition:self.statusItem.view.frame.origin seconds:3];
+//        
+//    }
+}
+
 -(void)draggingView:(MTDraggingView *)draggingView didReceiveSeconds:(int)seconds {
+    [self configureTimerWithSeconds:seconds];
+}
 
-//    Speed mode
-//    seconds = seconds/60;
+-(void)draggingView:(MTDraggingView *)draggingView didReceiveMouseEvent:(NSEventType)mouseEvent {
+    [self.statusItem popUpStatusItemMenu:self.statusBarContextMenu];
+}
+
+
+-(void)configureTimerWithSeconds:(int)seconds {
     self.countdown = seconds;
-
+    
     if (self.countdownTimer != nil) {
         [self.countdownTimer invalidate];
         self.countdownTimer = nil;
     }
-
+    
     self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:60 // Normal Speed is 60
-                                                  target:self
-                                                selector:@selector(timerDidEnd:)
-                                                userInfo:nil
-                                                 repeats:YES];
+                                                           target:self
+                                                         selector:@selector(timerDidEnd:)
+                                                         userInfo:nil
+                                                          repeats:YES];
+    
+    [self updateTimeLeftMenuItemText];
 }
 
 -(void)timerDidEnd:(NSTimer*)timer {
     self.countdown -= 60;
 
-    NSLog(@"countdown: %f seconds left", self.countdown);
+//    NSLog(@"countdown: %f seconds left", self.countdown);
     if (self.countdown <= 0) {
         [self.countdownTimer invalidate];
         self.countdownTimer = nil;
-        
-        NSUserNotification *notification = [[NSUserNotification alloc] init];
-        notification.title = @"Menu Timer Done!";
-        notification.informativeText = @"Tick Tack!";
-        notification.soundName = NSUserNotificationDefaultSoundName;
-        
-        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+
+
+        self.notification = nil;
+        self.countdown = 0;
+        self.notification = [[NSUserNotification alloc] init];
+        self.notification.title = @"Menu Timer Done!";
+        self.notification.informativeText = @"Tick Tack!";
+        self.notification.soundName = @"InstaSound.aif";
+        self.notification.hasActionButton = YES;
+        self.notification.actionButtonTitle = @"Gimme 5";
+        self.notification.otherButtonTitle = @"Done";
+
+        [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:self.notification];
     }
+    
+    [self updateTimeLeftMenuItemText];
     
     [self.draggingView updateWithSeconds:self.countdown];
     
 }
+
+-(void)updateTimeLeftMenuItemText {
+    NSString *formatString = [NSString timeStringFromSeconds:self.countdown];
+
+    self.timeLeftMenuItem.title = formatString;
+
+}
+
+-(void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
+    NSLog(@"activate!!!! = action?");
+    
+    switch (notification.activationType) {
+        case NSUserNotificationActivationTypeNone:
+//            NSLog(@"no activation");
+            break;
+        case NSUserNotificationActivationTypeContentsClicked:
+//            NSLog(@"clicked activation");
+            break;
+        case NSUserNotificationActivationTypeActionButtonClicked:
+            [self configureTimerWithSeconds:5*60]; // Snooze
+            break;
+            
+        default:
+            break;
+    }
+}
+
+//-(void)userNotificationCenter:(NSUserNotificationCenter *)center didDeliverNotification:(NSUserNotification *)notification {
+//    
+//}
+//
+//-(BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification {
+//    return YES;
+//}
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "de.markusteufel.MenuTimer" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
@@ -222,6 +293,21 @@
     }
 
     return NSTerminateNow;
+}
+
+
+- (IBAction)aboutMenuTimerMenuAction:(id)sender {
+//    https://github.com/reinerspass/FullscreenWriter
+    [[NSWorkspace sharedWorkspace] openURL:[ NSURL URLWithString:@"https://github.com/reinerspass/MenuTimer"]];
+
+    NSLog(@"about menu item action");
+}
+
+
+- (IBAction)quitMenuTimerMenuAction:(id)sender {
+    NSLog(@"quit menu item action");
+    
+    exit(0);
 }
 
 @end

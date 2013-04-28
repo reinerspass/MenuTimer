@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED8984DB17180284005CBF3C /* MenubarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8984DA17180284005CBF3C /* MenubarIcon.png */; };
+		ED2451D4171F2E2500965323 /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D3171F2E2500965323 /* TimerIcon.icns */; };
+		ED2451D6171F348100965323 /* InstaSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D5171F348100965323 /* InstaSound.aif */; };
 		ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED908FEF1715537F003804C5 /* Cocoa.framework */; };
 		ED908FFA1715537F003804C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED908FF81715537F003804C5 /* InfoPlist.strings */; };
 		ED908FFC1715537F003804C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED908FFB1715537F003804C5 /* main.m */; };
@@ -17,14 +18,14 @@
 		ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */; };
 		ED90901217155576003804C5 /* MTDraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED90901117155576003804C5 /* MTDraggingView.m */; };
 		ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED909013171556F2003804C5 /* QuartzCore.framework */; };
-		EDB7C658171E98E40011C6DC /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDB7C657171E98E40011C6DC /* TimerIcon.icns */; };
-		EDB7C65A171E98ED0011C6DC /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EDB7C659171E98ED0011C6DC /* TimerIcon.icns */; };
+		EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */; };
 		EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */; };
 		EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED8984DA17180284005CBF3C /* MenubarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenubarIcon.png; path = images/MenubarIcon.png; sourceTree = "<group>"; };
+		ED2451D3171F2E2500965323 /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TimerIcon.icns; path = images/TimerIcon.icns; sourceTree = "<group>"; };
+		ED2451D5171F348100965323 /* InstaSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InstaSound.aif; sourceTree = "<group>"; };
 		ED908FEC1715537F003804C5 /* MenuTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED908FEF1715537F003804C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ED908FF21715537F003804C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -42,8 +43,8 @@
 		ED90901017155576003804C5 /* MTDraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggingView.h; sourceTree = "<group>"; };
 		ED90901117155576003804C5 /* MTDraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggingView.m; sourceTree = "<group>"; };
 		ED909013171556F2003804C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		EDB7C657171E98E40011C6DC /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TimerIcon.icns; path = images/TimerIcon.icns; sourceTree = "<group>"; };
-		EDB7C659171E98ED0011C6DC /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TimerIcon.icns; sourceTree = "<group>"; };
+		EDE6D307172D0C4600790EE7 /* NSString+MTTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MTTime.h"; sourceTree = "<group>"; };
+		EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTTime.m"; sourceTree = "<group>"; };
 		EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTFloatingWindowController.h; sourceTree = "<group>"; };
 		EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTFloatingWindowController.m; sourceTree = "<group>"; };
 		EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTFloatingWindowController.xib; sourceTree = "<group>"; };
@@ -65,8 +66,6 @@
 		ED908FE31715537F003804C5 = {
 			isa = PBXGroup;
 			children = (
-				EDB7C659171E98ED0011C6DC /* TimerIcon.icns */,
-				ED909013171556F2003804C5 /* QuartzCore.framework */,
 				ED908FF51715537F003804C5 /* MenuTimer */,
 				ED908FEE1715537F003804C5 /* Frameworks */,
 				ED908FED1715537F003804C5 /* Products */,
@@ -84,7 +83,6 @@
 		ED908FEE1715537F003804C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED908FEF1715537F003804C5 /* Cocoa.framework */,
 				ED908FF11715537F003804C5 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -93,6 +91,8 @@
 		ED908FF11715537F003804C5 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED909013171556F2003804C5 /* QuartzCore.framework */,
+				ED908FEF1715537F003804C5 /* Cocoa.framework */,
 				ED908FF21715537F003804C5 /* AppKit.framework */,
 				ED908FF31715537F003804C5 /* CoreData.framework */,
 				ED908FF41715537F003804C5 /* Foundation.framework */,
@@ -114,6 +114,8 @@
 				EDE9745B1715783B00D25AA8 /* MTFloatingWindowController.h */,
 				EDE9745C1715783B00D25AA8 /* MTFloatingWindowController.m */,
 				EDE9745D1715783B00D25AA8 /* MTFloatingWindowController.xib */,
+				EDE6D307172D0C4600790EE7 /* NSString+MTTime.h */,
+				EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */,
 			);
 			path = MenuTimer;
 			sourceTree = "<group>";
@@ -133,8 +135,8 @@
 		ED90900F17155562003804C5 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				EDB7C657171E98E40011C6DC /* TimerIcon.icns */,
-				ED8984DA17180284005CBF3C /* MenubarIcon.png */,
+				ED2451D5171F348100965323 /* InstaSound.aif */,
+				ED2451D3171F2E2500965323 /* TimerIcon.icns */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -195,9 +197,8 @@
 				ED9090001715537F003804C5 /* Credits.rtf in Resources */,
 				ED9090061715537F003804C5 /* MainMenu.xib in Resources */,
 				EDE9745F1715783B00D25AA8 /* MTFloatingWindowController.xib in Resources */,
-				ED8984DB17180284005CBF3C /* MenubarIcon.png in Resources */,
-				EDB7C658171E98E40011C6DC /* TimerIcon.icns in Resources */,
-				EDB7C65A171E98ED0011C6DC /* TimerIcon.icns in Resources */,
+				ED2451D4171F2E2500965323 /* TimerIcon.icns in Resources */,
+				ED2451D6171F348100965323 /* InstaSound.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +214,7 @@
 				ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */,
 				ED90901217155576003804C5 /* MTDraggingView.m in Sources */,
 				EDE9745E1715783B00D25AA8 /* MTFloatingWindowController.m in Sources */,
+				EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +261,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -292,6 +295,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -308,6 +312,7 @@
 		ED90900D1715537F003804C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuTimer/MenuTimer-Prefix.pch";
@@ -320,6 +325,7 @@
 		ED90900E1715537F003804C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuTimer/MenuTimer-Prefix.pch";

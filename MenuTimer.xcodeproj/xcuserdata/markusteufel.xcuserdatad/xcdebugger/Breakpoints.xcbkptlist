@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MenuTimer/MTAppDelegate.m"
-         timestampString = "387880847.649626"
+         timestampString = "388828390.205997"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "35"
-         endingLineNumber = "35"
-         landmarkName = "-draggingView:didReceiveSeconds:"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
+         landmarkName = "-draggingView:didReceiveMouseEvent:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

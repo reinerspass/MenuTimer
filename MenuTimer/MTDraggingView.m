@@ -19,6 +19,16 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.seconds = 0;
+
+//        NSLog(@"mouse up started");
+//        self.mouseOverMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSRightMouseDown handler:^(NSEvent *event) {
+//            NSLog(@"mouse over");
+//
+//            [self.delegate draggingView:self didReceiveMouseEvent:NSRightMouseDown];
+//            return event;
+//            
+//        }];
+
     }
     return self;
 }
@@ -103,8 +113,6 @@
                                                 userInfo:nil
                                                  repeats:YES];
 
-
-
     self.mouseUpMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDragged handler:^(NSEvent *event) {
 
         self.floatingWindowController = nil;
@@ -123,6 +131,10 @@
     }];
 
     self.floatingWindowController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
+}
+
+-(void)rightMouseDown:(NSEvent *)theEvent {
+    [self.delegate draggingView:self didReceiveMouseEvent:NSRightMouseDown];
 }
 
 /**
@@ -153,6 +165,7 @@
     double dy   = position.y - self.startPoint.y;   //vertical difference
     double dist = sqrt( dx*dx + dy*dy );            //distance using Pythagoras theorem
     double seconds = (int)(dist*dist/5000)*60;
+    seconds += 60;
     return fmin(seconds, 60*60*9);
 }
 

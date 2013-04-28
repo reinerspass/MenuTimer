@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>TimerIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>de.markusteufel.MenuTimer</string>
+	<string>de.markusteufel.MenuTimerRRRR</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -38,6 +38,8 @@
 	<string>0461</string>
 	<key>DTXcodeBuild</key>
 	<string>4H512</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
 	<key>NSHumanReadableCopyright</key>
@@ -46,5 +48,7 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSUserNotificationAlertStyle</key>
+	<string>alert</string>
 </dict>
 </plist>
