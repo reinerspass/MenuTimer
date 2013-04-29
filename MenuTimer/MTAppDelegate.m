@@ -8,11 +8,11 @@
 
 #import "MTAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
-#import "MTFloatingWindowController.h"
 #import "NSString+MTTime.h"
 #import <DPHue/DPHue.h>
 #import <DPHue/DPHueLight.h>
 #import "MTDefine.h"
+#import "MAAttachedWindow.h"
 
 @implementation MTAppDelegate
 
@@ -30,11 +30,12 @@
     self.timeLeftMenuItem.title = @"No Timer Set";
     
     
-    self.hue = [[DPHue alloc] initWithHueHost:@"192.168.178.85" username:@"newdeveloper"];
+    self.hue = [[DPHue alloc] initWithHueHost:HUE_HOST username:HUE_USER_NAME];
     [self.hue readWithCompletion:^(DPHue *hue, NSError *err) {
         if (err != nil) {
             NSLog(@"error: %@", err.description);
         } else {
+            NSLog(@"hue success!!!");
         }
     }];
     
@@ -126,11 +127,10 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     BOOL notFirstLaunch = [defaults boolForKey:DEFAULTS_NOT_FIRST_LAUNCH];
 
-    if (!notFirstLaunch) {
+    if (!notFirstLaunch || YES) {
         [defaults setBool:YES forKey:DEFAULTS_NOT_FIRST_LAUNCH];
         [defaults synchronize];
         
-        self.introViewController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
         
         NSRect frameRelativeToWindow = [self.draggingView
                                         convertRect:self.draggingView.bounds toView:nil
@@ -140,26 +140,34 @@
                                          convertRectToScreen:frameRelativeToWindow
                                          ].origin;
         
-        
-//        NSLog(@"dragging view super rect %@", NSStringFromPoint(pointRelativeToScreen));
-        
+        pointRelativeToScreen.x += 11;
         
         
-        self.introViewController.pointerPosition = MTTransparentPointingRectTop;
-        [self.introViewController setWindowFrame:NSMakeRect(pointRelativeToScreen.x, pointRelativeToScreen.y, 250, 155)];
-        
-        
-        [self.introViewController addCustomView:self.introView];
-        [self.introViewController windowShowTime:5];
-        
+        self.attachedWindow = [[MAAttachedWindow alloc] initWithView:self.introView
+                                                attachedToPoint:pointRelativeToScreen
+                                                       inWindow:nil
+                                                         onSide:MAPositionBottom
+                                                     atDistance:5.0];
+        [self.attachedWindow makeKeyAndOrderFront:self];
+
     }
 }
 
 -(void)draggingView:(MTDraggingView *)draggingView didReceiveSeconds:(int)seconds {
+    if (self.attachedWindow != nil) {
+        [self.attachedWindow orderOut:self];
+        self.attachedWindow = nil;
+    }
+
     [self configureTimerWithSeconds:seconds];
 }
 
 -(void)draggingView:(MTDraggingView *)draggingView didReceiveMouseEvent:(NSEventType)mouseEvent {
+    if (self.attachedWindow != nil) {
+        [self.attachedWindow orderOut:self];
+        self.attachedWindow = nil;
+    }
+
     [self.statusItem popUpStatusItemMenu:self.statusBarContextMenu];
 }
 
@@ -172,7 +180,7 @@
         self.countdownTimer = nil;
     }
     
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 // Normal Speed is 1
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1. // Normal Speed is 1
                                                            target:self
                                                          selector:@selector(timerDidEnd:)
                                                          userInfo:nil
@@ -184,7 +192,7 @@
 -(void)timerDidEnd:(NSTimer*)timer {
     self.countdown -= 1;
 
-//    NSLog(@"countdown: %f seconds left", self.countdown);
+    NSLog(@"countdown: %f seconds left", self.countdown);
     if (self.countdown <= 0) {
         [self.countdownTimer invalidate];
         self.countdownTimer = nil;

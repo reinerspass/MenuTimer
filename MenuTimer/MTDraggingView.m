@@ -8,7 +8,8 @@
 
 #import "MTDraggingView.h"
 
-#import "MTFloatingWindowController.h"
+#import "MAAttachedWindow.h"
+#import "NSString+MTTime.h"
 
 @implementation MTDraggingView
 
@@ -115,7 +116,8 @@
 
     self.mouseUpMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSLeftMouseDragged handler:^(NSEvent *event) {
 
-        self.floatingWindowController = nil;
+        [self.attachedWindow orderOut:self];
+        self.attachedWindow = nil;
 
         [self.animationTimer invalidate];
         self.animationTimer = nil;
@@ -130,8 +132,25 @@
         return event;
     }];
 
-    self.floatingWindowController = [[MTFloatingWindowController alloc] initWithWindowNibName:@"MTFloatingWindowController"];
-    self.floatingWindowController.pointerPosition = MTTransparentPointingRectLeft;
+    
+    self.attachedWindowTextField = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 12, 80, 15)];
+    [self.attachedWindowTextField setEditable:NO];
+    [self.attachedWindowTextField setSelectable:NO];
+    [self.attachedWindowTextField setBackgroundColor:[NSColor clearColor]];
+    [self.attachedWindowTextField setTextColor:[NSColor whiteColor]];
+    [self.attachedWindowTextField setBordered:NO];
+    [self.attachedWindowTextField setAlignment:NSCenterTextAlignment];
+    [self.attachedWindowTextField setFont:[NSFont fontWithName:@"Helvetica-Bold" size:14]];
+    NSView *view = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 80, 35)];
+    [view addSubview:self.attachedWindowTextField];
+    
+    
+    
+    self.attachedWindow = [[MAAttachedWindow alloc] initWithView:view
+                                                          attachedToPoint:NSMakePoint(0, 0)
+                                                                 inWindow:nil
+                                                                   onSide:MAPositionRight
+                                                               atDistance:15.];
 }
 
 -(void)rightMouseDown:(NSEvent *)theEvent {
@@ -147,7 +166,15 @@
      */
     NSPoint p = [self mousePosition];
     self.seconds = [self secondsForPosition:p];
-    [self.floatingWindowController upadteWithPosition:p seconds:self.seconds];
+//    [self.floatingWindowController upadteWithPosition:p seconds:self.seconds];
+    
+    self.attachedWindowTextField.stringValue = [NSString timeStringFromSeconds:self.seconds];
+    self.attachedWindow.point = p;
+    
+    if (![self.attachedWindow isVisible]) {
+        [self.attachedWindow makeKeyAndOrderFront:self];
+    }
+    
     [self setNeedsDisplay:YES];
 }
 

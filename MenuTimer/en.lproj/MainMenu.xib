@@ -1307,7 +1307,7 @@
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
 					</object>
-					<object class="NSMenuItem" id="956392052">
+					<object class="NSMenuItem" id="416126568">
 						<reference key="NSMenu" ref="898394220"/>
 						<bool key="NSIsDisabled">YES</bool>
 						<bool key="NSIsSeparator">YES</bool>
@@ -1317,7 +1317,7 @@
 						<reference key="NSOnImage" ref="35465992"/>
 						<reference key="NSMixedImage" ref="502551668"/>
 					</object>
-					<object class="NSMenuItem" id="429643336">
+					<object class="NSMenuItem" id="901651357">
 						<reference key="NSMenu" ref="898394220"/>
 						<string key="NSTitle">Reset Settings</string>
 						<string key="NSKeyEquiv"/>
@@ -1353,20 +1353,20 @@
 					</object>
 				</array>
 			</object>
-			<object class="NSCustomView" id="653270130">
+			<object class="NSCustomView" id="252086665">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">268</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="NSTextField" id="803703932">
-						<reference key="NSNextResponder" ref="653270130"/>
+					<object class="NSTextField" id="471761666">
+						<reference key="NSNextResponder" ref="252086665"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{17, 10}, {202, 105}}</string>
-						<reference key="NSSuperview" ref="653270130"/>
+						<string key="NSFrame">{{17, 20}, {232, 84}}</string>
+						<reference key="NSSuperview" ref="252086665"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="NSAntiCompressionPriority">{250, 750}</string>
 						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="931610066">
+						<object class="NSTextFieldCell" key="NSCell" id="591310598">
 							<int key="NSCellFlags">67108864</int>
 							<int key="NSCellFlags2">138674176</int>
 							<string key="NSContents">Drag the Menu Bar Icon to create a timer. The further you drag the longer the time is set. Rightclick the Icon for options.</string>
@@ -1376,7 +1376,7 @@
 								<int key="NSfFlags">16</int>
 							</object>
 							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="803703932"/>
+							<reference key="NSControlView" ref="471761666"/>
 							<object class="NSColor" key="NSBackgroundColor">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
@@ -1395,10 +1395,10 @@
 						<bool key="NSControlAutosetMaxLayoutWidth">YES</bool>
 					</object>
 				</array>
-				<string key="NSFrameSize">{239, 148}</string>
+				<string key="NSFrameSize">{266, 124}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="803703932"/>
+				<reference key="NSNextKeyView" ref="471761666"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -2113,7 +2113,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">resetSettingsMenuAction:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="429643336"/>
+						<reference key="destination" ref="901651357"/>
 					</object>
 					<int key="connectionID">562</int>
 				</object>
@@ -2121,7 +2121,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">introView</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="653270130"/>
+						<reference key="destination" ref="252086665"/>
 					</object>
 					<int key="connectionID">570</int>
 				</object>
@@ -3119,8 +3119,8 @@
 							<reference ref="460869464"/>
 							<reference ref="436460774"/>
 							<reference ref="666361485"/>
-							<reference ref="429643336"/>
-							<reference ref="956392052"/>
+							<reference ref="901651357"/>
+							<reference ref="416126568"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -3146,34 +3146,34 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">560</int>
-						<reference key="object" ref="429643336"/>
+						<reference key="object" ref="901651357"/>
 						<reference key="parent" ref="898394220"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">561</int>
-						<reference key="object" ref="956392052"/>
+						<reference key="object" ref="416126568"/>
 						<reference key="parent" ref="898394220"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">563</int>
-						<reference key="object" ref="653270130"/>
+						<reference key="object" ref="252086665"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="803703932"/>
+							<reference ref="471761666"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">564</int>
-						<reference key="object" ref="803703932"/>
+						<reference key="object" ref="471761666"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="931610066"/>
+							<reference ref="591310598"/>
 						</array>
-						<reference key="parent" ref="653270130"/>
+						<reference key="parent" ref="252086665"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">565</int>
-						<reference key="object" ref="931610066"/>
-						<reference key="parent" ref="803703932"/>
+						<reference key="object" ref="591310598"/>
+						<reference key="parent" ref="471761666"/>
 					</object>
 				</array>
 			</object>
@@ -3352,12 +3352,17 @@
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="aboutMenuTimerMenuAction:">id</string>
+						<string key="quitMenuTimerMenuAction:">id</string>
 						<string key="resetSettingsMenuAction:">id</string>
 						<string key="saveAction:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="aboutMenuTimerMenuAction:">
 							<string key="name">aboutMenuTimerMenuAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="quitMenuTimerMenuAction:">
+							<string key="name">quitMenuTimerMenuAction:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="resetSettingsMenuAction:">

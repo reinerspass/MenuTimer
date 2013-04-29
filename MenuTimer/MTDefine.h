@@ -18,3 +18,9 @@ typedef enum  {
 
 #define POINTER_WIDTH 15
 #define POINTER_HEIGHT 25
+
+
+#define HUE_USER_NAME @"newdeveloper"
+#define HUE_HOST @"192.168.178.85"
+
+

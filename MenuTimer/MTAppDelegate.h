@@ -13,6 +13,7 @@
 #define DEFAULTS_NOT_FIRST_LAUNCH @"notFirstLaunch"
 
 @class DPHue;
+@class MAAttachedWindow;
 
 @interface MTAppDelegate : NSObject <NSApplicationDelegate, MTDraggingViewDelegate, NSUserNotificationCenterDelegate>
 
@@ -28,9 +29,6 @@
 
 @property (nonatomic, strong) MTDraggingView *draggingView;
 
-
-@property (nonatomic, strong) MTFloatingWindowController *introViewController;
-
 @property (nonatomic, strong) NSTimer *countdownTimer;
 @property double countdown;
 @property (nonatomic, strong) NSUserNotification *notification;
@@ -38,7 +36,7 @@
 @property (nonatomic, strong) DPHue *hue;
 
 @property BOOL blink;
-
+@property (nonatomic, strong) MAAttachedWindow *attachedWindow;
 
 @property (weak) IBOutlet NSView *introView;
 

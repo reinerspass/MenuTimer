@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @class MTFloatingWindowController;
-@class MTDraggingView;
+@class MTDraggingView, MAAttachedWindow;
 
 @protocol MTDraggingViewDelegate <NSObject>
 
@@ -23,12 +23,12 @@
 
 @property (nonatomic, weak) id<MTDraggingViewDelegate> delegate;
 
-@property (nonatomic, strong) MTFloatingWindowController *floatingWindowController;
-
 @property (nonatomic, strong) id mouseUpMonitor;
 @property (nonatomic, strong) id mouseOverMonitor;
 
 @property (nonatomic, strong) NSTimer *animationTimer;
+@property (nonatomic, strong) MAAttachedWindow *attachedWindow;
+@property (nonatomic, strong) NSTextField *attachedWindowTextField;
 @property double seconds;
 
 @property NSPoint startPoint;
