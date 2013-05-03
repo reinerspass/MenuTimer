@@ -14,6 +14,7 @@
 
 @class DPHue;
 @class MAAttachedWindow;
+@class MTOptionsWindowController;
 
 @interface MTAppDelegate : NSObject <NSApplicationDelegate, MTDraggingViewDelegate, NSUserNotificationCenterDelegate>
 
@@ -39,6 +40,9 @@
 @property (nonatomic, strong) MAAttachedWindow *attachedWindow;
 
 @property (weak) IBOutlet NSView *introView;
+
+
+@property (nonatomic, strong) MTOptionsWindowController *optionsWindowController;
 
 - (IBAction)saveAction:(id)sender;
 

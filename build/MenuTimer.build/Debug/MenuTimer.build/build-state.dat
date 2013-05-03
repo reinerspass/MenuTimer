@@ -4,18 +4,22 @@ r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist MenuTimer/MenuTimer-Info.plist
 cDataModelVersionCompile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld
-cProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer normal x86_64
 cCopyStringsFile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings MenuTimer/en.lproj/InfoPlist.strings
 cCpResource MenuTimer/en.lproj/Credits.rtf build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf
 cCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib
-cCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib
 cCpResource MenuTimer/images/TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
 cCpResource MenuTimer/InstaSound.aif build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif
+cCpResource MenuTimer/Readme.md build/Debug/MenuTimer.app/Contents/Resources/Readme.md
+cCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib
+cPhaseScriptExecution "Copy Pods Resources" /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh
 cTouch /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
@@ -43,45 +47,55 @@ c0000000050AA93860000000000027C8A
 t1353356166
 s162954
 
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.h
+c00000000517E15250000000000001F02
+t1367217445
+s7938
+
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m
+c00000000517E17E90000000000007210
+t1367218153
+s29200
+
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.h
-c00000000516EED0B00000000000003A7
-t1366224139
-s935
+c00000000517F7BF900000000000005C4
+t1367309305
+s1476
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m
-c00000000516FDE9B0000000000002B39
-t1366285979
-s11065
+c00000000517F7CD70000000000004107
+t1367309527
+s16647
+
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDefine.h
+c00000000517F8FDE0000000000000277
+t1367314398
+s631
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.h
-c00000000516FFE2C000000000000032E
-t1366294060
-s814
+c00000000517E163900000000000003D0
+t1367217721
+s976
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m
-c00000000516FFFD80000000000001637
-t1366294488
-s5687
+c000000005180D27E0000000000001C51
+t1367396990
+s7249
 
-N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindow.xib
-c00000000516540800000000000001465
-t1365590144
-s5221
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.h
+c00000000517F84CD0000000000000165
+t1367311565
+s357
 
-N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.h
-c0000000051684F460000000000000170
-t1365790534
-s368
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m
+c00000000517F99760000000000000A88
+t1367316854
+s2696
 
-N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m
-c0000000051684FE0000000000000040D
-t1365790688
-s1037
-
-N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib
-c0000000051684FA00000000000003843
-t1365790624
-s14403
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib
+c000000005180D2ED000000000000AD48
+t1367397101
+s44360
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Prefix.pch
 c0000000051651BFF0000000000000095
@@ -94,6 +108,21 @@ c00000000516533DD0000000000000088
 t1365586909
 s136
 
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.h
+c00000000517CD533000000000000010D
+t1367135539
+s269
+
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m
+c00000000517CD519000000000000020C
+t1367135513
+s524
+
+N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/Readme.md
+c00000000517E0C0000000000000001BB
+t1367215104
+s443
+
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/Credits.rtf
 c0000000051651BFF00000000000001B4
 t1365580799
@@ -105,14 +134,9 @@ t1365580799
 s45
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib
-c000000005165384900000000000223C6
-t1365588041
-s140230
-
-N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/images/MenubarIcon.png
-c000000005167CADB00000000000004A3
-t1365756635
-s1187
+c00000000517F98600000000000024DAA
+t1367316576
+s150954
 
 N/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/images/TimerIcon.icns
 c00000000516EF6D9000000000003E542
@@ -124,92 +148,139 @@ c0000000051651BFF00000000000000FE
 t1365580799
 s254
 
-N/Users/markusteufel/Dropbox/MenuTimer/TimerIcon.icns
-c00000000516E6155000000000005CD92
-t1366188373
-s380306
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket/GCDAsyncSocket.h
+c00000000517CFA18000000000000C50D
+t1367144984
+s50445
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket/GCDAsyncUdpSocket.h
+c00000000517CFA18000000000000A401
+t1367144984
+s41985
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue/DPHue.h
+c00000000517CFA1A0000000000000F03
+t1367144986
+s3843
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue/DPHueDiscover.h
+c00000000517CFA1A0000000000000476
+t1367144986
+s1142
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue/DPHueLight.h
+c00000000517CFA1A0000000000000D4B
+t1367144986
+s3403
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue/DPJSONSerializable.h
+c00000000517CFA1A00000000000001A1
+t1367144986
+s417
+
+N/Users/markusteufel/Dropbox/MenuTimer/Pods/build/Debug/libPods.a
+c0000000051827894000000000018B3C8
+t1367505044
+s1618888
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app
-t1366294410
+t1367505053
 s102
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist
-t1366285892
+t1367505053
 s1602
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer
-t1366294410
-s60484
-
-N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/PkgInfo
-t1366285892
-s8
-
-N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif
-t1366285906
-s162954
-
-N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MTFloatingWindow.nib
 t2
 s0
 
-N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MTFloatingWindowController.nib
-t1366105095
-s4046
+N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/PkgInfo
+t1367505053
+s8
+
+N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif
+t2
+s0
+
+N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MTOptionsWindowController.nib
+t2
+s0
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd
-t1365587560
+t1367505054
 s170
 
-N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png
-t1365756872
-s1187
+N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/Readme.md
+t2
+s0
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
-t1366285906
-s255298
+t2
+s0
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf
-t1365587565
-s436
+t2
+s0
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings
-t1365587565
-s92
+t2
+s0
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/MainMenu.nib
-t1365588045
-s25877
+t2
+s0
+
+N/Users/markusteufel/Dropbox/MenuTimer/build/Debug/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o
+t1367505056
+s89124
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o
-t1366294108
-s87808
+t1367505056
+s128812
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o
-t1366294409
-s60092
+t1367505056
+s62436
 
-N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o
-t1366285903
-s27452
+N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o
+t1367505056
+s37284
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MenuTimer.LinkFileList
-c000000005165485800000000000001E5
-t1365592152
-s485
+c000000005182789D00000000000002D9
+t1367505053
+s729
+
+N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o
+t1367505056
+s5968
 
 N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o
-t1366285903
+t1367505055
 s2832
 
-N/var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth
-t1366285902
-s12887404
+N/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh
+c000000005182789D000000000000002F
+t1367505053
+s47
+
+N/var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth
+t1367505054
+s12886992
 
 NMenuTimer/MenuTimer-Info.plist
 c00000000516EFDF400000000000004F9
 t1366228468
 s1273
+
+CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m
+r0
 
 CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m
 r0
@@ -217,7 +288,10 @@ r0
 CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m
 r0
 
-CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m
+CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m
+r0
+
+CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m
 r0
 
 CBuild AST from /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m
@@ -225,11 +299,24 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa224605b3720b741^0282655b3720b741^---0#1#0#--18"Check dependencies36"88F58040-8E71-4787-930A-DEED24EB9CE9-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesebc64f59b032b741^a7965d59b032b741^---0#1#0#--18"Check dependencies36"1CFB5EE3-C00E-4082-ACC0-DB31F45350B5-
+
+CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389197855.192535
+e389197856.289165
+r1
+xCompileC
+xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o
+x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m1572311fb032b741^ac374a20b032b741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m0000000000000000^2574"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o MenuTimer/MAAttachedWindow.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MAAttachedWindow.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MAAttachedWindow.o36"C996EE5F-C60E-4065-AD1A-C5F179272581-
 
 CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387986906.347626
-e387986908.807118
+s389197855.193521
+e389197856.481341
 r1
 xCompileC
 xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o
@@ -238,11 +325,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m312659da3520b741^12a0cedc3520b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m0000000000000000^3032"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o MenuTimer/MTAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-generated-files.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-own-target-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-all-target-headers.hmap -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-project-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o36"4C70BA6F-6919-44F0-8366-C0B1B6087F3C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.mcea8311fb032b741^2a397b20b032b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m0000000000000000^2556"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o MenuTimer/MTAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTAppDelegate.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTAppDelegate.o36"35AF1FE2-95F0-4F1F-AC10-9BD7BCBD6CCA-
 
 CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387987291.405618
-e387987291.677264
+s389197855.195271
+e389197856.211503
 r1
 xCompileC
 xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o
@@ -251,24 +338,37 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m9623685b3720b741^da8f045c3720b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m0000000000000000^3038"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o MenuTimer/MTDraggingView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-generated-files.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-own-target-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-all-target-headers.hmap -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-project-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o36"B31DCD2C-D435-47BE-AB53-5210089E6F3A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m1d22321fb032b741^363f3620b032b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m0000000000000000^2562"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o MenuTimer/MTDraggingView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTDraggingView.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTDraggingView.o36"FAA4AD92-3316-471C-8CFC-8FFFB45A1C64-
 
-CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387978702.873794
-e387978703.498512
+CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389197856.212897
+e389197856.483763
 r1
 xCompileC
-xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o
-x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m
+xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o
+x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.me8dadfce1520b741^b9ab7fcf1520b741^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m0000000000000000^3110"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o MenuTimer/MTFloatingWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-generated-files.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-own-target-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-all-target-headers.hmap -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-project-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTFloatingWindowController.o36"488BFDB7-130A-489E-B67D-E573BD331B96-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m42b03620b032b741^28f37b20b032b741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m0000000000000000^2628"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o MenuTimer/MTOptionsWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MTOptionsWindowController.o36"F5499E12-D112-46BC-A1B3-37DABBB26109-
+
+CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389197855.885962
+e389197856.257319
+r1
+xCompileC
+xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o
+x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.mbaf5e21fb032b741^6ff04120b032b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m0000000000000000^2568"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o MenuTimer/NSString+MTTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/NSString+MTTime.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/NSString+MTTime.o36"EC6F30F7-CECD-4078-87E9-0E52AA16D762-
 
 CCompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387978702.873115
-e387978703.497191
+s389197855.195134
+e389197855.883970
 r1
 xCompileC
 xbuild/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o
@@ -277,130 +377,127 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m42cedfce1520b741^1f477fcf1520b741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m0000000000000000^2978"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o MenuTimer/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-generated-files.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-own-target-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-all-target-headers.hmap -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-project-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o36"C1BD1BAF-3E12-4D42-B0AB-0720819614D9-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m2d22321fb032b741^cb9ce21fb032b741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m0000000000000000^2502"CompileC build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o MenuTimer/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -include /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch -MMD -MT dependencies -MF /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/main.m -o /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/main.o36"51865B1B-C982-4FB9-B3FC-B5071E1A8DAD-
 
-CCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindow.xib
-r0
-
-CCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib
-s387797894.694939
-e387797895.645560
+CCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib
+s389197916.653117
+e389197918.841175
 r1
 xCompileXIB
-x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compiling /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib0dffb186531db741^d559a587531db741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib0000000000000000^623"CompileXIB MenuTimer/MTFloatingWindowController.xib    cd /Users/markusteufel/Dropbox/MenuTimer    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MTFloatingWindowController.nib /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTFloatingWindowController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"79E85108-21CB-4E92-A84B-0489AC2F1C11-
+x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compiling /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib834fa75cb032b741^9b59d75eb032b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib0000000000000000^620"CompileXIB MenuTimer/MTOptionsWindowController.xib    cd /Users/markusteufel/Dropbox/MenuTimer    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MTOptionsWindowController.nib /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MTOptionsWindowController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"09F9171A-0F44-4D57-9A03-9101F08374D9-
 
 CCompileXIB /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib
-s387280845.672016
-e387280845.985301
+s389197916.425291
+e389197916.984025
 r1
 xCompileXIB
 x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compiling /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib5f24accd6f15b741^a06efccd6f15b741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib0000000000000000^596"CompileXIB MenuTimer/en.lproj/MainMenu.xib    cd /Users/markusteufel/Dropbox/MenuTimer    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/MainMenu.nib /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"A51535E4-212A-4B24-A6A2-7BA9DDFA2C48-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compiling /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xibe7006d5cb032b741^53e9fb5cb032b741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib0000000000000000^596"CompileXIB MenuTimer/en.lproj/MainMenu.xib    cd /Users/markusteufel/Dropbox/MenuTimer    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/MainMenu.nib /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/MainMenu.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk36"8BDC18B9-773D-4DE2-8AD4-DE03F4ED9A86-
 
 CCopyStringsFile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings MenuTimer/en.lproj/InfoPlist.strings
-s387280365.134499
-e387280365.145057
+s389197916.425252
+e389197916.748200
 r1
 xCopyStringsFile
 x/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings
 xMenuTimer/en.lproj/InfoPlist.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy MenuTimer/en.lproj/InfoPlist.strings598822ed6d15b741^ff2125ed6d15b741^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/InfoPlist.strings0000000000000000^392"CopyStringsFile build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings MenuTimer/en.lproj/InfoPlist.strings    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj -- MenuTimer/en.lproj/InfoPlist.strings36"6334FE6B-49BA-41ED-AEBD-7436B5AB42B8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy MenuTimer/en.lproj/InfoPlist.stringsd0096d5cb032b741^5d8abf5cb032b741^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/InfoPlist.strings0000000000000000^392"CopyStringsFile build/Debug/MenuTimer.app/Contents/Resources/en.lproj/InfoPlist.strings MenuTimer/en.lproj/InfoPlist.strings    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj -- MenuTimer/en.lproj/InfoPlist.strings36"139C53B0-743C-4840-91D6-8C3C6385D1FC-
 
 CCpResource MenuTimer/InstaSound.aif build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif
-s387978706.444291
-e387978706.694568
+s389197916.501335
+e389197916.749443
 r1
 xCpResource
 xMenuTimer/InstaSound.aif
 xbuild/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif30d871d21520b741^78cfb1d21520b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif000000000080d041^399"CpResource MenuTimer/InstaSound.aif build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/InstaSound.aif /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"E7FA83D6-B38D-4BCD-A116-321D85BA2136-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif9371805cb032b741^f9dabf5cb032b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif000000000080d041^399"CpResource MenuTimer/InstaSound.aif build/Debug/MenuTimer.app/Contents/Resources/InstaSound.aif    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/InstaSound.aif /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"D6484C5C-685E-4F73-B50D-5FB16B909118-
+
+CCpResource MenuTimer/Readme.md build/Debug/MenuTimer.app/Contents/Resources/Readme.md
+s389197916.524634
+e389197916.651809
+r1
+xCpResource
+xMenuTimer/Readme.md
+xbuild/Debug/MenuTimer.app/Contents/Resources/Readme.md
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy build/Debug/MenuTimer.app/Contents/Resources/Readme.md776a865cb032b741^16dda65cb032b741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/Readme.md000000000080d041^384"CpResource MenuTimer/Readme.md build/Debug/MenuTimer.app/Contents/Resources/Readme.md    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/Readme.md /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"D0A75E9B-3D67-4CA7-8461-7ECDED0FB268-
 
 CCpResource MenuTimer/en.lproj/Credits.rtf build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf
-s387280365.134519
-e387280365.137699
+s389197916.425285
+e389197916.500023
 r1
 xCpResource
 xMenuTimer/en.lproj/Credits.rtf
 xbuild/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtfeca022ed6d15b741^924023ed6d15b741^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^426"CpResource MenuTimer/en.lproj/Credits.rtf build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/Credits.rtf /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj36"93A7B731-A21A-4BAD-B99D-4346BE605393-
-
-CCpResource MenuTimer/images/MenubarIcon.png build/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png
-s387449672.165118
-e387449672.205654
-r1
-xCpResource
-xMenuTimer/images/MenubarIcon.png
-xbuild/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png9a5e2a480318b741^85b234480318b741^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png000000000080d041^416"CpResource MenuTimer/images/MenubarIcon.png build/Debug/MenuTimer.app/Contents/Resources/MenubarIcon.png    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/images/MenubarIcon.png /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"9D56C699-1981-47F8-A92F-52C082216F65-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf1c086d5cb032b741^2a02805cb032b741^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf000000000080d041^426"CpResource MenuTimer/en.lproj/Credits.rtf build/Debug/MenuTimer.app/Contents/Resources/en.lproj/Credits.rtf    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/en.lproj/Credits.rtf /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/en.lproj36"F955BA10-2327-4BBA-9FA3-B37E6FDA5C1B-
 
 CCpResource MenuTimer/images/TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
-s387978706.444213
-e387978706.678661
+s389197916.425477
+e389197916.523280
 r1
 xCpResource
 xMenuTimer/images/TimerIcon.icns
 xbuild/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icnsaad771d21520b741^1fbdadd21520b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns0000000000000000^413"CpResource MenuTimer/images/TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/images/TimerIcon.icns /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"65E8DF46-D36A-4BCB-8F9C-06EF12639650-
-
-CCpResource TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
-s387890409.292471
-e387890409.326714
-r1
-xCpResource
-xTimerIcon.icns
-xbuild/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icnsa9f54ae9bc1eb741^5e6658e9bc1eb741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns0000000000000000^379"CpResource TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/TimerIcon.icns /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"41BEDF98-28D1-48C7-B0FF-3F98788CF30B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icnsea076d5cb032b741^66f6855cb032b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns000000000080d041^413"CpResource MenuTimer/images/TimerIcon.icns build/Debug/MenuTimer.app/Contents/Resources/TimerIcon.icns    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/images/TimerIcon.icns /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources36"066E3767-53A0-431D-A907-9718414E9F12-
 
 CDataModelVersionCompile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld
-s387280360.162400
-e387280360.590663
+s389197853.338929
+e389197854.862476
 r1
 xDataModelVersionCompile
 x/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd
 x/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"DataModelVersionCompile build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd MenuTimer/MenuTimer.xcdatamodeld14b029e86d15b741^424397e86d15b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld/0000000000000000^559"DataModelVersionCompile build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd MenuTimer/MenuTimer.xcdatamodeld    cd /Users/markusteufel/Dropbox/MenuTimer    /Applications/Xcode.app/Contents/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -MOMC_PLATFORMS macosx -XD_MOMC_TARGET_VERSION=10.8 /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd36"92C8F612-3F79-4D54-83DA-C20ED252FE06-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"DataModelVersionCompile build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd MenuTimer/MenuTimer.xcdatamodeld7ee4561db032b741^c5cadc1eb032b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld/0000000000000000^559"DataModelVersionCompile build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd MenuTimer/MenuTimer.xcdatamodeld    cd /Users/markusteufel/Dropbox/MenuTimer    /Applications/Xcode.app/Contents/Developer/usr/bin/momc -XD_MOMC_SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -MOMC_PLATFORMS macosx -XD_MOMC_TARGET_VERSION=10.8 /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer.xcdatamodeld /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Resources/MenuTimer.momd36"7D335DFB-12A5-449B-B03D-5F9E1EFC293E-
 
 CLd /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer normal x86_64
-s387987291.684619
-e387987292.329073
+s389197913.394727
+e389197916.417080
 r1
 xLd
 x/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer
 xnormal
 xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Link /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer2c63af5b3720b741^7b31585c3720b741^---0#0#0#--802"Ld build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer normal x86_64    cd /Users/markusteufel/Dropbox/MenuTimer    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/markusteufel/Dropbox/MenuTimer/build/Debug -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -filelist /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MenuTimer.LinkFileList -mmacosx-version-min=10.8 -fobjc-arc -fobjc-link-runtime -framework QuartzCore -framework Cocoa -o /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer36"7B4280B3-6806-4E69-8BD9-2B9AF5C73A7E-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Link /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimerba316559b032b741^15c66a5cb032b741^---0#0#0#--916"Ld build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer normal x86_64    cd /Users/markusteufel/Dropbox/MenuTimer    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/markusteufel/Dropbox/MenuTimer/build/Debug -L/Users/markusteufel/Dropbox/MenuTimer/Pods/build/Debug -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug -filelist /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MenuTimer.LinkFileList -mmacosx-version-min=10.8 -ObjC -framework CoreServices -framework Security -fobjc-arc -fobjc-link-runtime -framework QuartzCore -framework Cocoa -lPods -o /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/MacOS/MenuTimer36"4D2C60D6-9803-4D14-9572-709002A2026F-
+
+CPhaseScriptExecution "Copy Pods Resources" /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh
+s389197918.855767
+e389197918.973491
+r1
+xPhaseScriptExecution
+xCopy Pods Resources
+x/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Run custom shell script 'Copy Pods Resources'c842dc5eb032b741^1135f95eb032b741^---0#0#0#--20808"PhaseScriptExecution "Copy Pods Resources" build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh    cd /Users/markusteufel/Dropbox/MenuTimer    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER markusteufel    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/markusteufel/Dropbox/MenuTimer/build    setenv BUILD_ROOT /Users/markusteufel/Dropbox/MenuTimer/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/markusteufel/Dropbox/MenuTimer/build/Debug    setenv CACHE_ROOT /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505    setenv CCHROOT /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x    setenv CLANG_CXX_LIBRARY libc++    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMBINE_HIDPI_IMAGES YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/markusteufel/Dropbox/MenuTimer/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug    setenv CONTENTS_FOLDER_PATH MenuTimer.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH MenuTimer.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/MenuTimer.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME MenuTimer.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/markusteufel/Dropbox/MenuTimer/build/Debug    setenv EMBEDDED_PROFILE_NAME embedded.provisionprofile    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH MenuTimer.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH MenuTimer.app/Contents/MacOS    setenv EXECUTABLE_NAME MenuTimer    setenv EXECUTABLE_PATH MenuTimer.app/Contents/MacOS/MenuTimer    setenv FILE_LIST /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH MenuTimer.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME MenuTimer.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER MenuTimer/MenuTimer-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS "DEBUG=1 "    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_64_TO_32_BIT_CONVERSION YES    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE MenuTimer/MenuTimer-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH MenuTimer.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH MenuTimer.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/MenuTimer.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER markusteufel    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/MenuTimer.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH MenuTimer.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-LinkMap-normal-x86_64.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/build/Debug\"  \"/Users/markusteufel/Dropbox/MenuTimer/Pods/build/Debug\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal/x86_64/MenuTimer.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH MenuTimer.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.8    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12D78    setenv MAC_OS_X_VERSION_ACTUAL 1083    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0803    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Objects-normal    setenv OBJROOT /Users/markusteufel/Dropbox/MenuTimer/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -framework CoreServices -framework Security"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/Users/markusteufel/.rbenv/shims:/Users/markusteufel/.rbenv/versions/1.9.3-p194/bin:/Users/markusteufel/scripts:/opt/local/bin:/opt/local/sbin:/Volumes/CaperWhite/Frankonia/ObjectiveC/Xcode/Scripts:/Volumes/CaperWhite/Frankonia/ObjectiveC/Xcode/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH MenuTimer.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/PkgInfo    setenv PKGINFO_PATH MenuTimer.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4H512    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH MenuTimer.app/Contents/PlugIns    setenv PODS_BUILD_HEADERS_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/Pods/BuildHeaders\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/BuildHeaders/CocoaAsyncSocket\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/BuildHeaders/DPHue\""    setenv PODS_HEADERS_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue\""    setenv PODS_PUBLIC_HEADERS_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket\" \"/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue\""    setenv PODS_ROOT /Users/markusteufel/Dropbox/MenuTimer/Pods    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH MenuTimer.app/Contents/PrivateHeaders    setenv PRODUCT_NAME MenuTimer    setenv PRODUCT_SETTINGS_PATH /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT MenuTimer    setenv PROJECT_DERIVED_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/DerivedSources    setenv PROJECT_DIR /Users/markusteufel/Dropbox/MenuTimer    setenv PROJECT_FILE_PATH /Users/markusteufel/Dropbox/MenuTimer/MenuTimer.xcodeproj    setenv PROJECT_NAME MenuTimer    setenv PROJECT_TEMP_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build    setenv PROJECT_TEMP_ROOT /Users/markusteufel/Dropbox/MenuTimer/build    setenv PUBLIC_HEADERS_FOLDER_PATH MenuTimer.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/markusteufel/Dropbox/MenuTimer/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH MenuTimer.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk    setenv SDK_NAME macosx10.8    setenv SDK_PRODUCT_BUILD_VERSION 12D75    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH MenuTimer.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH MenuTimer.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/markusteufel/Dropbox/MenuTimer    setenv SRCROOT /Users/markusteufel/Dropbox/MenuTimer    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMROOT /Users/markusteufel/Dropbox/MenuTimer/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME MenuTimer    setenv TARGET_BUILD_DIR /Users/markusteufel/Dropbox/MenuTimer/build/Debug    setenv TARGET_NAME MenuTimer    setenv TARGET_TEMP_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build    setenv TEMP_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build    setenv TEMP_FILES_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build    setenv TEMP_FILE_DIR /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build    setenv TEMP_ROOT /Users/markusteufel/Dropbox/MenuTimer/build    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 505    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH MenuTimer.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER markusteufel    setenv USER_APPS_DIR /Users/markusteufel/Applications    setenv USER_LIBRARY_DIR /Users/markusteufel/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH MenuTimer.app/Contents/version.plist    setenv VERSION_INFO_BUILDER markusteufel    setenv VERSION_INFO_FILE MenuTimer_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:MenuTimer  PROJECT:MenuTimer-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME MenuTimer.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H512    setenv XCODE_VERSION_ACTUAL 0461    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/Script-247242ADC9554C2CAE2FECE3.sh36"28017E2B-2171-44C4-BB09-821EF0FE16EF-
 
 CProcessInfoPlistFile /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist MenuTimer/MenuTimer-Info.plist
-s387978692.458293
-e387978692.491549
+s389197853.189327
+e389197853.330614
 r1
 xProcessInfoPlistFile
 x/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist
 xMenuTimer/MenuTimer-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process MenuTimer/MenuTimer-Info.plistc57475c41520b741^1ac182c41520b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Info.plist0000000000000000^421"ProcessInfoPlistFile build/Debug/MenuTimer.app/Contents/Info.plist MenuTimer/MenuTimer-Info.plist    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-infoPlistUtility MenuTimer/MenuTimer-Info.plist -genpkginfo /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist36"6312C872-3721-4507-B9F2-511EEEC7B170-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process MenuTimer/MenuTimer-Info.plistc993301db032b741^effe541db032b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Info.plist0000000000000000^421"ProcessInfoPlistFile build/Debug/MenuTimer.app/Contents/Info.plist MenuTimer/MenuTimer-Info.plist    cd /Users/markusteufel/Dropbox/MenuTimer    builtin-infoPlistUtility MenuTimer/MenuTimer-Info.plist -genpkginfo /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app/Contents/Info.plist36"56416C7C-5FEC-4F47-ACD5-154BDFC010C1-
 
-CProcessPCH /Users/markusteufel/Library/Developer/Xcode/DerivedData/MenuTimer-gnqfabmrvlizfxfdfcsrlivdneil/Index/PrecompiledHeaders/MenuTimer-Prefix-ezcyfzrrkeoegwabaxdoekzrfivl_ast/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+CProcessPCH /Users/markusteufel/Library/Developer/Xcode/DerivedData/MenuTimer-hbhwagmifnqmcqegvtmtbbijftff/Index/PrecompiledHeaders/MenuTimer-Prefix-ddkylbpbixlctigecimtyyeetbmo_ast/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
-CProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s387978692.528407
-e387978702.865819
+CProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s389197853.338931
+e389197855.185549
 r1
 xProcessPCH
-x/var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth
+x/var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth
 xMenuTimer/MenuTimer-Prefix.pch
 xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile MenuTimer/MenuTimer-Prefix.pch4d858cc41520b741^f4a7ddce1520b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Prefix.pch0000000000000000^3095"ProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-generated-files.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-own-target-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-all-target-headers.hmap -iquote /Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer-project-headers.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug --serialize-diagnostics /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Prefix.pch -o /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fevexlwnhidmwtcudqfpdgdeagje/MenuTimer-Prefix.pch.d36"05B17DA4-E15C-4AB9-A82B-C1C51E8E13F7-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile MenuTimer/MenuTimer-Prefix.pch2ee7561db032b741^397f2f1fb032b741^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Prefix.pch0000000000000000^2619"ProcessPCH /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth MenuTimer/MenuTimer-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/markusteufel/Dropbox/MenuTimer    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wno-sign-conversion -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/MenuTimer.hmap -I/Users/markusteufel/Dropbox/MenuTimer/build/Debug/include -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/CocoaAsyncSocket -I/Users/markusteufel/Dropbox/MenuTimer/Pods/Headers/DPHue -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources/x86_64 -I/Users/markusteufel/Dropbox/MenuTimer/build/MenuTimer.build/Debug/MenuTimer.build/DerivedSources -F/Users/markusteufel/Dropbox/MenuTimer/build/Debug --serialize-diagnostics /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.dia -c /Users/markusteufel/Dropbox/MenuTimer/MenuTimer/MenuTimer-Prefix.pch -o /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/3m/g0g5l4q956x01d4v3dj_fcdm0000gs/C/com.apple.Xcode.505/SharedPrecompiledHeaders/MenuTimer-Prefix-fpdjfzafvliarxfyzexohbxhpudw/MenuTimer-Prefix.pch.d36"9432D851-26E4-4080-A799-00EEA2ED3071-
 
 CTouch /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app
-s387987292.417520
-e387987292.605708
+s389197918.981645
+e389197919.089274
 r1
 xTouch
 x/Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Touch /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app66f96a5c3720b741^f2eb9b5c3720b741^---0#0#0#--163"Touch build/Debug/MenuTimer.app    cd /Users/markusteufel/Dropbox/MenuTimer    /usr/bin/touch -c /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app36"24BD0322-487F-4CE8-9C1B-14793EF4AEB4-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Touch /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.appe064fb5eb032b741^a9da165fb032b741^---0#0#0#--163"Touch build/Debug/MenuTimer.app    cd /Users/markusteufel/Dropbox/MenuTimer    /usr/bin/touch -c /Users/markusteufel/Dropbox/MenuTimer/build/Debug/MenuTimer.app36"164B9BB6-B53F-4C3C-93EF-7C6690AFE930-
 

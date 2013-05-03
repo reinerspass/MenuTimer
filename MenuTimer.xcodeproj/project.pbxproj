@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00616E6050E149A3BF0A2E4F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C3A446E244C7A87984E91 /* libPods.a */; };
+		ED21CBE91732B055006C6083 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED21CBE81732B055006C6083 /* libPods.a */; };
 		ED2451D4171F2E2500965323 /* TimerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D3171F2E2500965323 /* TimerIcon.icns */; };
 		ED2451D6171F348100965323 /* InstaSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = ED2451D5171F348100965323 /* InstaSound.aif */; };
 		ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED908FEF1715537F003804C5 /* Cocoa.framework */; };
@@ -19,15 +19,16 @@
 		ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED9090071715537F003804C5 /* MenuTimer.xcdatamodeld */; };
 		ED90901217155576003804C5 /* MTDraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED90901117155576003804C5 /* MTDraggingView.m */; };
 		ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED909013171556F2003804C5 /* QuartzCore.framework */; };
-		EDA60EE7172DB876005B949C /* MTOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60EE5172DB876005B949C /* MTOptionsViewController.m */; };
-		EDA60EE8172DB876005B949C /* MTOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA60EE6172DB876005B949C /* MTOptionsViewController.xib */; };
 		EDA60EEC172E433F005B949C /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60EEB172E433F005B949C /* MAAttachedWindow.m */; };
 		EDA60EEE172E4359005B949C /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA60EED172E4359005B949C /* Readme.md */; };
+		EDA60EF8172FB402005B949C /* MTOptionsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA60EF6172FB402005B949C /* MTOptionsWindowController.m */; };
+		EDA60EF9172FB402005B949C /* MTOptionsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA60EF7172FB402005B949C /* MTOptionsWindowController.xib */; };
 		EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		196C3A446E244C7A87984E91 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED21CBE81732B055006C6083 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = Pods/build/Debug/libPods.a; sourceTree = "<group>"; };
 		ED2451D3171F2E2500965323 /* TimerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TimerIcon.icns; path = images/TimerIcon.icns; sourceTree = "<group>"; };
 		ED2451D5171F348100965323 /* InstaSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = InstaSound.aif; sourceTree = "<group>"; };
 		ED908FEC1715537F003804C5 /* MenuTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,12 +49,12 @@
 		ED90901117155576003804C5 /* MTDraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggingView.m; sourceTree = "<group>"; };
 		ED909013171556F2003804C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EDA60EDC172D9329005B949C /* MTDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDefine.h; sourceTree = "<group>"; };
-		EDA60EE4172DB876005B949C /* MTOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTOptionsViewController.h; sourceTree = "<group>"; };
-		EDA60EE5172DB876005B949C /* MTOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTOptionsViewController.m; sourceTree = "<group>"; };
-		EDA60EE6172DB876005B949C /* MTOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTOptionsViewController.xib; sourceTree = "<group>"; };
 		EDA60EEA172E433F005B949C /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		EDA60EEB172E433F005B949C /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		EDA60EED172E4359005B949C /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+		EDA60EF5172FB402005B949C /* MTOptionsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTOptionsWindowController.h; sourceTree = "<group>"; };
+		EDA60EF6172FB402005B949C /* MTOptionsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTOptionsWindowController.m; sourceTree = "<group>"; };
+		EDA60EF7172FB402005B949C /* MTOptionsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTOptionsWindowController.xib; sourceTree = "<group>"; };
 		EDE6D307172D0C4600790EE7 /* NSString+MTTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MTTime.h"; sourceTree = "<group>"; };
 		EDE6D308172D0C4600790EE7 /* NSString+MTTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTTime.m"; sourceTree = "<group>"; };
 		FCCD1242B1CA4ADE9445E1E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -66,7 +67,7 @@
 			files = (
 				ED909014171556F2003804C5 /* QuartzCore.framework in Frameworks */,
 				ED908FF01715537F003804C5 /* Cocoa.framework in Frameworks */,
-				00616E6050E149A3BF0A2E4F /* libPods.a in Frameworks */,
+				ED21CBE91732B055006C6083 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +77,7 @@
 		ED908FE31715537F003804C5 = {
 			isa = PBXGroup;
 			children = (
+				ED21CBE81732B055006C6083 /* libPods.a */,
 				ED908FF51715537F003804C5 /* MenuTimer */,
 				ED908FEE1715537F003804C5 /* Frameworks */,
 				ED908FED1715537F003804C5 /* Products */,
@@ -165,9 +167,9 @@
 		EDA60EF0172E45E1005B949C /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				EDA60EE4172DB876005B949C /* MTOptionsViewController.h */,
-				EDA60EE5172DB876005B949C /* MTOptionsViewController.m */,
-				EDA60EE6172DB876005B949C /* MTOptionsViewController.xib */,
+				EDA60EF5172FB402005B949C /* MTOptionsWindowController.h */,
+				EDA60EF6172FB402005B949C /* MTOptionsWindowController.m */,
+				EDA60EF7172FB402005B949C /* MTOptionsWindowController.xib */,
 			);
 			name = Options;
 			sourceTree = "<group>";
@@ -239,8 +241,8 @@
 				ED9090061715537F003804C5 /* MainMenu.xib in Resources */,
 				ED2451D4171F2E2500965323 /* TimerIcon.icns in Resources */,
 				ED2451D6171F348100965323 /* InstaSound.aif in Resources */,
-				EDA60EE8172DB876005B949C /* MTOptionsViewController.xib in Resources */,
 				EDA60EEE172E4359005B949C /* Readme.md in Resources */,
+				EDA60EF9172FB402005B949C /* MTOptionsWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +275,8 @@
 				ED9090091715537F003804C5 /* MenuTimer.xcdatamodeld in Sources */,
 				ED90901217155576003804C5 /* MTDraggingView.m in Sources */,
 				EDE6D309172D0C4600790EE7 /* NSString+MTTime.m in Sources */,
-				EDA60EE7172DB876005B949C /* MTOptionsViewController.m in Sources */,
 				EDA60EEC172E433F005B949C /* MAAttachedWindow.m in Sources */,
+				EDA60EF8172FB402005B949C /* MTOptionsWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +380,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuTimer/MenuTimer-Prefix.pch";
 				INFOPLIST_FILE = "MenuTimer/MenuTimer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/build/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +398,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MenuTimer/MenuTimer-Prefix.pch";
 				INFOPLIST_FILE = "MenuTimer/MenuTimer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/build/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

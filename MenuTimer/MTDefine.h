@@ -24,3 +24,7 @@ typedef enum  {
 #define HUE_HOST @"192.168.178.85"
 
 
+#define PREF_KEY_HUE_HOST @"PREF_KEY_HUE_HOST"
+#define PREF_KEY_HUE_USERNAME @"PREF_KEY_HUE_USERNAME"
+
+

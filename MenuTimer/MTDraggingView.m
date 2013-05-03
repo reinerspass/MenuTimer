@@ -127,7 +127,12 @@
         /**
          *  Alert delegate
          */
-        [self.delegate draggingView:self didReceiveSeconds:self.seconds];
+        
+        if (self.seconds == 0) {
+            [self.delegate draggingView:self didReceiveMouseEvent:NSRightMouseDown];
+        } else {
+            [self.delegate draggingView:self didReceiveSeconds:self.seconds];
+        }
         
         return event;
     }];
@@ -171,11 +176,13 @@
     self.attachedWindowTextField.stringValue = [NSString timeStringFromSeconds:self.seconds];
     self.attachedWindow.point = p;
     
-    if (![self.attachedWindow isVisible]) {
+    if (![self.attachedWindow isVisible] && self.seconds >=1) {
         [self.attachedWindow makeKeyAndOrderFront:self];
     }
     
     [self setNeedsDisplay:YES];
+
+    
 }
 
 #pragma mark - Calculations
@@ -193,7 +200,6 @@
     double dy   = position.y - self.startPoint.y;   //vertical difference
     double dist = sqrt( dx*dx + dy*dy );            //distance using Pythagoras theorem
     double seconds = (int)(dist*dist/5000)*60;
-    seconds += 60;
     return fmin(seconds, 60*60*9);
 }
 

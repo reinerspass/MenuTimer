@@ -12,6 +12,9 @@
 #import <DPHue/DPHue.h>
 #import <DPHue/DPHueLight.h>
 #import "MTDefine.h"
+
+
+#import "MTOptionsWindowController.h"
 #import "MAAttachedWindow.h"
 
 @implementation MTAppDelegate
@@ -127,7 +130,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     BOOL notFirstLaunch = [defaults boolForKey:DEFAULTS_NOT_FIRST_LAUNCH];
 
-    if (!notFirstLaunch || YES) {
+    if (!notFirstLaunch) {
         [defaults setBool:YES forKey:DEFAULTS_NOT_FIRST_LAUNCH];
         [defaults synchronize];
         
@@ -441,4 +444,8 @@
     [defaults synchronize];
 }
 
+- (IBAction)optionsMenuAction:(id)sender {
+    self.optionsWindowController = [[MTOptionsWindowController alloc] initWithWindowNibName:@"MTOptionsWindowController"];
+    [self.optionsWindowController.window makeKeyAndOrderFront:self];
+}
 @end
