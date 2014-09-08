@@ -20,16 +20,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.seconds = 0;
-
-//        NSLog(@"mouse up started");
-//        self.mouseOverMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSRightMouseDown handler:^(NSEvent *event) {
-//            NSLog(@"mouse over");
-//
-//            [self.delegate draggingView:self didReceiveMouseEvent:NSRightMouseDown];
-//            return event;
-//            
-//        }];
-
     }
     return self;
 }
@@ -41,24 +31,18 @@
 
 -(void)drawRect:(NSRect)dirtyRect {
     CGSize shadowSize = CGSizeMake(0, -1);
-    CGContextSetShadowWithColor([[NSGraphicsContext currentContext] graphicsPort], shadowSize, 0,
-                                [NSColor whiteColor].CGColor);
+//    CGContextSetShadowWithColor([[NSGraphicsContext currentContext] graphicsPort], shadowSize, 0,
+//                                [NSColor whiteColor].CGColor);
 
 
     [[NSColor blackColor] setStroke];
-    [[NSColor colorWithDeviceWhite:0 alpha:.3]  setFill];
+    [[NSColor colorWithDeviceWhite:0 alpha:.2]  setFill];
     
-    /**
-     *  Circle Drawing Magic
-     */
-    NSRect rect = NSMakeRect(2, 2, 18, 18);
-    NSBezierPath* circlePath = [NSBezierPath bezierPath];
-    [circlePath appendBezierPathWithOvalInRect: rect];
-    [circlePath fill];
     
     /**
      *  Angle Drawing Magic
      */
+    NSBezierPath* circlePath = [NSBezierPath bezierPath];
     float clockAngle = fmod(self.seconds/10, 360);
     [[NSColor colorWithDeviceWhite:0 alpha:.5]  setFill];
     circlePath = [NSBezierPath bezierPath];
@@ -70,10 +54,11 @@
     /**
      *  String Drawing Magic
      */
-    if (self.seconds >= 3600) {
+    if (YES) { //self.seconds >= 3600
         int hours = self.seconds / 3600;
         
-        [[NSColor colorWithDeviceWhite:0 alpha:.7]  setFill];
+        [[NSColor colorWithDeviceWhite:1 alpha:.7]  setFill];
+//        [[NSColor whiteColor] setFill];
         NSRect rect = NSMakeRect(5, 5, 12, 12);
         NSBezierPath* circlePath = [NSBezierPath bezierPath];
         [circlePath appendBezierPathWithOvalInRect: rect];
@@ -87,17 +72,25 @@
         
         NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
         [style setAlignment:NSCenterTextAlignment];
-        //        NSDictionary *attr = [NSDictionary dictionaryWithObject:style forKey:NSParagraphStyleAttributeName];
+
+        NSString *hoursString;
+        CGPoint position ;
+        NSColor *drawColor;
+        if (self.seconds >= 3600) {
+            position = NSMakePoint(8.5,5);
+            hoursString = [NSString stringWithFormat:@"%d", hours];
+            drawColor = [NSColor blackColor];
+        } else {
+            position = NSMakePoint(7.4,5);
+            hoursString = @"M";
+            drawColor = [NSColor blackColor];
+        }
         
-        NSString *hoursString = [NSString stringWithFormat:@"%d", hours];
-        //        [hoursString drawAtPoint:NSMakePoint(8, 4) withAttributes:attr];
-        
-        [hoursString drawAtPoint:NSMakePoint(8.5,5) withAttributes:[NSDictionary
+        [hoursString drawAtPoint:position withAttributes:[NSDictionary
                                                                     dictionaryWithObjectsAndKeys:
-                                                                    [NSColor whiteColor], NSForegroundColorAttributeName,
+                                                                    drawColor, NSForegroundColorAttributeName,
                                                                     [NSFont fontWithName:@"Helvetica-Bold" size:9], NSFontAttributeName,
                                                                     nil]];
-        
     }
     
 }
@@ -138,7 +131,9 @@
     }];
 
     
-    self.attachedWindowTextField = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 12, 80, 15)];
+    float attachedWindowWidth = 140;
+    
+    self.attachedWindowTextField = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 12, attachedWindowWidth, 15)];
     [self.attachedWindowTextField setEditable:NO];
     [self.attachedWindowTextField setSelectable:NO];
     [self.attachedWindowTextField setBackgroundColor:[NSColor clearColor]];
@@ -146,16 +141,16 @@
     [self.attachedWindowTextField setBordered:NO];
     [self.attachedWindowTextField setAlignment:NSCenterTextAlignment];
     [self.attachedWindowTextField setFont:[NSFont fontWithName:@"Helvetica-Bold" size:14]];
-    NSView *view = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 80, 35)];
+    NSView *view = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, attachedWindowWidth, 35)];
     [view addSubview:self.attachedWindowTextField];
     
     
     
     self.attachedWindow = [[MAAttachedWindow alloc] initWithView:view
-                                                          attachedToPoint:NSMakePoint(0, 0)
-                                                                 inWindow:nil
-                                                                   onSide:MAPositionRight
-                                                               atDistance:15.];
+                                                 attachedToPoint:NSMakePoint(0, 0)
+                                                        inWindow:nil
+                                                          onSide:MAPositionRight
+                                                      atDistance:15.];
 }
 
 -(void)rightMouseDown:(NSEvent *)theEvent {
@@ -173,7 +168,7 @@
     self.seconds = [self secondsForPosition:p];
 //    [self.floatingWindowController upadteWithPosition:p seconds:self.seconds];
     
-    self.attachedWindowTextField.stringValue = [NSString timeStringFromSeconds:self.seconds];
+    self.attachedWindowTextField.stringValue = [NSString timeStringFromSecondsPlusEndingTime:self.seconds];
     self.attachedWindow.point = p;
     
     if (![self.attachedWindow isVisible] && self.seconds >=1) {

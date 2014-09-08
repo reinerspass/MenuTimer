@@ -77,10 +77,12 @@
         self.countdown = timerInterval;
         
         if (timerInterval <= 0) {
-            [self timerDidEnd:nil];
+            [self timerDidUpdate:nil];
         }
     }
 }
+
+
 
 - (void) fileNotifications
 {
@@ -185,36 +187,43 @@
     
     self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1. // Normal Speed is 1
                                                            target:self
-                                                         selector:@selector(timerDidEnd:)
+                                                         selector:@selector(timerDidUpdate:)
                                                          userInfo:nil
                                                           repeats:YES];
     
     [self updateTimeLeftMenuItemText];
 }
 
--(void)timerDidEnd:(NSTimer*)timer {
-    self.countdown -= 1;
+-(void)timerDidUpdate:(NSTimer*)timer {
+    [self timerDidUpdate:timer withAlarm:YES];
+}
 
-    NSLog(@"countdown: %f seconds left", self.countdown);
+-(void)timerDidUpdate:(NSTimer*)timer withAlarm:(BOOL)alarm {
+    self.countdown -= 1;
+    
+    NSLog(@"countdown %f", self.countdown);
+
     if (self.countdown <= 0) {
         [self.countdownTimer invalidate];
         self.countdownTimer = nil;
 
 
-        self.notification = nil;
-        self.countdown = 0;
-        self.notification = [[NSUserNotification alloc] init];
-        self.notification.title = @"Menu Timer Done!";
-        self.notification.informativeText = @"Tick Tack!";
-        self.notification.soundName = @"InstaSound.aif";
-        self.notification.hasActionButton = YES;
-        self.notification.actionButtonTitle = @"Gimme 5";
-        self.notification.otherButtonTitle = @"Done";
-
-        [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
-        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:self.notification];
-        
-        [self blinkHue:3];
+        if (alarm) {
+            self.notification = nil;
+            self.countdown = 0;
+            self.notification = [[NSUserNotification alloc] init];
+            self.notification.title = @"Menu Timer Done!";
+            self.notification.informativeText = @"Tick Tack!";
+            self.notification.soundName = @"InstaSound.aif";
+            self.notification.hasActionButton = YES;
+            self.notification.actionButtonTitle = @"Gimme 5";
+            self.notification.otherButtonTitle = @"Done";
+            
+            [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
+            [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:self.notification];
+            
+            [self blinkHue:3];
+        }
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setValue:nil forKey:DEFAULTS_ALERT_DATE];
@@ -422,6 +431,13 @@
     return NSTerminateNow;
 }
 
+- (IBAction)cancelTimerAction:(id)sender {
+    [self.countdownTimer invalidate];
+    self.countdownTimer = nil;
+    [self timerDidUpdate:nil];
+    self.countdown = 0;
+    [self timerDidUpdate:sender withAlarm:NO];
+}
 
 - (IBAction)aboutMenuTimerMenuAction:(id)sender {
 //    https://github.com/reinerspass/FullscreenWriter

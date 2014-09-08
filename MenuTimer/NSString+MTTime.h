@@ -11,5 +11,5 @@
 @interface NSString (MTTime)
 
 +(NSString*)timeStringFromSeconds:(double)seconds;
-
++(NSString*)timeStringFromSecondsPlusEndingTime:(double)seconds;
 @end
