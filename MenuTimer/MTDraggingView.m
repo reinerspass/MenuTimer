@@ -15,6 +15,16 @@
 
 #pragma mark - View Lifecycle Stuff
 
+-(BOOL)darkModeEnabled {
+    if (![[[NSUserDefaults standardUserDefaults]
+           stringForKey:@"AppleInterfaceStyle"]
+          isEqualToString:@"Light"]) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
@@ -30,21 +40,19 @@
 
 
 -(void)drawRect:(NSRect)dirtyRect {
-    CGSize shadowSize = CGSizeMake(0, -1);
-//    CGContextSetShadowWithColor([[NSGraphicsContext currentContext] graphicsPort], shadowSize, 0,
-//                                [NSColor whiteColor].CGColor);
-
-
     [[NSColor blackColor] setStroke];
     [[NSColor colorWithDeviceWhite:0 alpha:.2]  setFill];
-    
     
     /**
      *  Angle Drawing Magic
      */
     NSBezierPath* circlePath = [NSBezierPath bezierPath];
     float clockAngle = fmod(self.seconds/10, 360);
-    [[NSColor colorWithDeviceWhite:0 alpha:.5]  setFill];
+    if ([self darkModeEnabled]) {
+        [[NSColor colorWithDeviceWhite:1.0 alpha:0.5] setFill];
+    } else {
+        [[NSColor colorWithDeviceWhite:0.0 alpha:0.5] setFill];
+    }
     circlePath = [NSBezierPath bezierPath];
     [circlePath moveToPoint:NSMakePoint(11, 11)];
     [circlePath appendBezierPathWithArcWithCenter:NSMakePoint(11, 11) radius:9 startAngle:90 endAngle:90-clockAngle clockwise:YES];
@@ -58,7 +66,6 @@
         int hours = self.seconds / 3600;
         
         [[NSColor colorWithDeviceWhite:1 alpha:.7]  setFill];
-//        [[NSColor whiteColor] setFill];
         NSRect rect = NSMakeRect(5, 5, 12, 12);
         NSBezierPath* circlePath = [NSBezierPath bezierPath];
         [circlePath appendBezierPathWithOvalInRect: rect];
